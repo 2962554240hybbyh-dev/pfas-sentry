@@ -251,7 +251,7 @@ def health(): return jsonify({'status': 'ok', 'compounds': len(PFAS_DB), 'endpoi
 if __name__ == '__main__':
     import argparse
     a = argparse.ArgumentParser()
-    a.add_argument('--port', type=int, default=5000)
+    a.add_argument('--port', type=int, default=int(os.environ.get('PORT', 5000)))
     args = a.parse_args()
     print(f'\n  PFAS-Sentry: http://localhost:{args.port}\n')
     app.run(host='0.0.0.0', port=args.port, debug=False)
