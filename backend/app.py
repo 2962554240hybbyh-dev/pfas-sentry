@@ -12,7 +12,14 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, BASE_DIR)
 
 from rdkit import Chem
-from rdkit.Chem import Descriptors, AllChem, MACCSkeys, Draw
+from rdkit.Chem import Descriptors, AllChem, MACCSkeys
+
+# Draw模块需要系统库(libXrender)，在服务器上可能不可用
+try:
+    from rdkit.Chem import Draw
+    HAS_DRAW = True
+except ImportError:
+    HAS_DRAW = False
 
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
 CORS(app)
@@ -54,6 +61,8 @@ MECHANISMS = {
 }
 
 def get_mol_image(smiles, size=(400,300)):
+    if not HAS_DRAW:
+        return None
     mol = Chem.MolFromSmiles(smiles)
     if mol is None: return None
     try:
