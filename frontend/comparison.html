@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparison - PFAS-Sentry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f2f5;color:#333}
+.navbar{background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 20px}
+.logo{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:bold}
+.nav-links{list-style:none;display:flex;gap:2rem}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+h1{color:#1a237e;margin:1.5rem 0 1rem}
+.input-section{background:#fff;border-radius:12px;padding:2rem;margin:1rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.input-row{display:flex;gap:1rem;align-items:flex-end}
+.input-group{flex:1}
+.input-group label{display:block;margin-bottom:.5rem;font-weight:bold;color:#444}
+select{width:100%;padding:.75rem 1rem;border:2px solid #ddd;border-radius:8px;font-size:1rem}
+.btn{background:#1a237e;color:#fff;border:none;padding:.75rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer;margin-top:1rem}
+.btn:hover{background:#283593}
+.vs{font-size:1.5rem;font-weight:bold;color:#1a237e;padding:.75rem 0}
+.chart-section{background:#fff;border-radius:12px;padding:1.5rem;margin:1.5rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1rem 0}
+.compare-card{background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08);text-align:center}
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid #eee}
+th{background:#f5f7fa;font-weight:bold;color:#555}
+.conclusion{background:#fff;border-radius:12px;padding:2rem;margin:1.5rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08);border-left:5px solid #1a237e}
+.badge{display:inline-block;padding:.3rem .8rem;border-radius:5px;font-weight:bold}
+.badge-high{background:#ffebee;color:#c62828}
+.badge-med{background:#fff3e0;color:#e65100}
+.badge-low{background:#e8f5e9;color:#2e7d32}
+.footer{background:#1a237e;color:#fff;padding:1.5rem 0;text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="container">
+<a href="index.html" class="logo">PFAS-Sentry</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="prediction.html">Prediction</a></li>
+<li><a href="qa.html">Q&A</a></li>
+<li><a href="comparison.html" class="active">Comparison</a></li>
+</ul>
+</div></nav>
+
+<div class="container">
+<h1>Compound Comparison</h1>
+
+<div class="input-section">
+<div class="input-row">
+<div class="input-group">
+<label>Compound 1:</label>
+<select id="c1">
+<option value="PFOA">PFOA (Perfluorooctanoic Acid)</option>
+<option value="PFOS">PFOS (Perfluorooctane Sulfonic Acid)</option>
+<option value="GenX">GenX (HFPO-DA)</option>
+<option value="PFNA">PFNA</option>
+<option value="PFDA">PFDA</option>
+<option value="PFHxA">PFHxA</option>
+<option value="PFBS">PFBS</option>
+<option value="PFHxS">PFHxS</option>
+<option value="PFBA">PFBA</option>
+<option value="TFA">TFA</option>
+</select>
+</div>
+<div class="vs">VS</div>
+<div class="input-group">
+<label>Compound 2:</label>
+<select id="c2">
+<option value="PFOA">PFOA</option>
+<option value="PFOS" selected>PFOS</option>
+<option value="GenX">GenX</option>
+<option value="PFNA">PFNA</option>
+<option value="PFDA">PFDA</option>
+<option value="PFHxA">PFHxA</option>
+<option value="PFBS">PFBS</option>
+<option value="PFHxS">PFHxS</option>
+<option value="PFBA">PFBA</option>
+<option value="TFA">TFA</option>
+</select>
+</div>
+</div>
+<button class="btn" onclick="compare()">Compare</button>
+</div>
+
+<div id="result" style="display:none">
+
+<div class="compare-grid">
+<div class="compare-card">
+<h3 id="name1"></h3>
+<div id="info1"></div>
+<div id="risk1" style="margin-top:1rem"></div>
+</div>
+<div class="compare-card">
+<h3 id="name2"></h3>
+<div id="info2"></div>
+<div id="risk2" style="margin-top:1rem"></div>
+</div>
+</div>
+
+<div class="chart-section">
+<h3>Comparison Chart</h3>
+<img id="compareChart" style="width:100%">
+</div>
+
+<div class="chart-section">
+<h3>Detailed Comparison</h3>
+<table>
+<thead><tr><th>Item</th><th id="col1"></th><th id="col2"></th></tr></thead>
+<tbody id="tableBody"></tbody>
+</table>
+</div>
+
+<div class="conclusion" id="conclusion"></div>
+
+</div>
+</div>
+
+<div class="footer"><div class="container">
+<p>PFAS-Sentry | Tox21 | PubMed | ChEMBL | EPA CompTox</p>
+</div></div>
+
+<script>
+var eps=['NR-AR','NR-AR-LBD','NR-AhR','SR-HSE','SR-MMP','SR-p53'];
+var epCn={'NR-AR':'Androgen Receptor','NR-AR-LBD':'Ligand Binding Domain','NR-AhR':'Aryl Hydrocarbon Receptor','SR-HSE':'Heat Shock Element','SR-MMP':'Mitochondrial Membrane','SR-p53':'p53 Pathway'};
+
+function compare(){
+var c1=document.getElementById('c1').value;
+var c2=document.getElementById('c2').value;
+fetch('/api/compare',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({compound1:c1,compound2:c2})})
+.then(function(r){return r.json()}).then(function(r){
+if(r.error){alert('Error: '+r.error);return;}
+document.getElementById('result').style.display='block';
+
+document.getElementById('name1').textContent=c1+' ('+r.compound1.info.name_cn+')';
+document.getElementById('name2').textContent=c2+' ('+r.compound2.info.name_cn+')';
+
+var i1=r.compound1.info;var i2=r.compound2.info;
+document.getElementById('info1').innerHTML='<p>CAS: '+i1.cas+'</p><p>Category: '+i1.category+'</p><p>Chain: '+i1.chain+'</p>';
+document.getElementById('info2').innerHTML='<p>CAS: '+i2.cas+'</p><p>Category: '+i2.category+'</p><p>Chain: '+i2.chain+'</p>';
+
+var ov1=r.compound1.predictions.overall;var ov2=r.compound2.predictions.overall;
+var rc1=ov1.risk_level.includes('High')?'high':ov1.risk_level.includes('Medium')?'med':'low';
+var rc2=ov2.risk_level.includes('High')?'high':ov2.risk_level.includes('Medium')?'med':'low';
+document.getElementById('risk1').innerHTML='<span class="badge badge-'+rc1+'">'+ov1.risk_level+' ('+ov1.score.toFixed(3)+')</span>';
+document.getElementById('risk2').innerHTML='<span class="badge badge-'+rc2+'">'+ov2.risk_level+' ('+ov2.score.toFixed(3)+')</span>';
+
+document.getElementById('col1').textContent=c1;
+document.getElementById('col2').textContent=c2;
+
+if(r.chart)document.getElementById('compareChart').src=r.chart;
+
+var tb=document.getElementById('tableBody');
+tb.innerHTML='';
+var items=[
+['Category',i1.category,i2.category],
+['Chain Length',i1.chain,i2.chain],
+['Toxicity',i1.toxicity,i2.toxicity],
+['Degradation',i1.degrade,i2.degrade],
+['Bioaccumulation',i1.bioaccum,i2.bioaccum],
+['Risk Score',ov1.score.toFixed(3),ov2.score.toFixed(3)]
+];
+eps.forEach(function(ep){
+var p1=r.compound1.predictions[ep];var p2=r.compound2.predictions[ep];
+if(p1&&p2)items.push([epCn[ep],p1.prediction.toFixed(3),p2.prediction.toFixed(3)]);
+});
+items.forEach(function(item){
+var row=tb.insertRow();
+row.insertCell(0).textContent=item[0];
+row.insertCell(1).textContent=item[1];
+row.insertCell(2).textContent=item[2];
+});
+
+var safer=ov1.score<ov2.score?c1:c2;
+document.getElementById('conclusion').innerHTML=
+'<h3>Conclusion</h3><p><b>'+safer+'</b> has lower risk score and is relatively safer.</p>';
+}).catch(function(e){alert('Error: '+e)});
+}
+</script>
+</body>
+</html>

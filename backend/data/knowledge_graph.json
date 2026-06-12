@@ -1,0 +1,2320 @@
+{
+  "compounds": [
+    {
+      "id": "PFOA",
+      "name": "Perfluorooctanoic Acid",
+      "cas": "335-67-1",
+      "smiles": "OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+      "category": "PFCA",
+      "chain": 8
+    },
+    {
+      "id": "PFOS",
+      "name": "Perfluorooctane Sulfonic Acid",
+      "cas": "1763-23-1",
+      "smiles": "OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+      "category": "PFSA",
+      "chain": 8
+    },
+    {
+      "id": "GenX",
+      "name": "HFPO-DA",
+      "cas": "13252-13-6",
+      "smiles": "OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F",
+      "category": "PFECDA",
+      "chain": 3
+    },
+    {
+      "id": "PFNA",
+      "name": "Perfluorononanoic Acid",
+      "cas": "375-95-1",
+      "smiles": "OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+      "category": "PFCA",
+      "chain": 9
+    },
+    {
+      "id": "PFHxA",
+      "name": "Perfluorohexanoic Acid",
+      "cas": "307-24-4",
+      "smiles": "OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F",
+      "category": "PFCA",
+      "chain": 6
+    }
+  ],
+  "triples": [
+    {
+      "head": "PFOA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFOA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFOS",
+      "relation": "contains",
+      "tail": "sulfonic acid group"
+    },
+    {
+      "head": "PFOS",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFNA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFNA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFDA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFDA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFBS",
+      "relation": "contains",
+      "tail": "sulfonic acid group"
+    },
+    {
+      "head": "PFBS",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "contains",
+      "tail": "sulfonic acid group"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "GenX",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "GenX",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFBA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFBA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "PFDoDA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "PFDoDA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "FOSA",
+      "relation": "contains",
+      "tail": "sulfonamide group"
+    },
+    {
+      "head": "FOSA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "TFMS",
+      "relation": "contains",
+      "tail": "sulfonic acid group"
+    },
+    {
+      "head": "TFMS",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "TFA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "TFA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "ADONA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "ADONA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "6:2 FTCA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "6:2 FTCA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "8:2 FTCA",
+      "relation": "contains",
+      "tail": "carboxylic acid group"
+    },
+    {
+      "head": "8:2 FTCA",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "9Cl-PF3ONS",
+      "relation": "contains",
+      "tail": "sulfonic acid group"
+    },
+    {
+      "head": "9Cl-PF3ONS",
+      "relation": "contains",
+      "tail": "perfluoroalkyl chain"
+    },
+    {
+      "head": "GenX",
+      "relation": "contains",
+      "tail": "ether linkage"
+    },
+    {
+      "head": "9Cl-PF3ONS",
+      "relation": "contains",
+      "tail": "chlorine substituent"
+    },
+    {
+      "head": "6:2 FTCA",
+      "relation": "contains",
+      "tail": "fluorotelomer chain"
+    },
+    {
+      "head": "PFOA",
+      "relation": "has_endpoint",
+      "tail": "NR-AR"
+    },
+    {
+      "head": "PFOA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFOA",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFOA",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFOA",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "NR-AR"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "SR-HSE"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFOS",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "PFNA",
+      "relation": "has_endpoint",
+      "tail": "NR-AR"
+    },
+    {
+      "head": "PFNA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFNA",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFNA",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "PFDA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFDA",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFDA",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFBS",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFBS",
+      "relation": "has_endpoint",
+      "tail": "SR-HSE"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "GenX",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "GenX",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFBA",
+      "relation": "has_endpoint",
+      "tail": "SR-HSE"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "has_endpoint",
+      "tail": "NR-AR"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFUnDA",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "PFDoDA",
+      "relation": "has_endpoint",
+      "tail": "NR-AR"
+    },
+    {
+      "head": "PFDoDA",
+      "relation": "has_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "FOSA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "FOSA",
+      "relation": "has_endpoint",
+      "tail": "SR-MMP"
+    },
+    {
+      "head": "N-EtFOSE",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "N-EtFOSE",
+      "relation": "has_endpoint",
+      "tail": "SR-HSE"
+    },
+    {
+      "head": "TFA",
+      "relation": "has_endpoint",
+      "tail": "SR-HSE"
+    },
+    {
+      "head": "ADONA",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "9Cl-PF3ONS",
+      "relation": "has_endpoint",
+      "tail": "NR-AhR"
+    },
+    {
+      "head": "9Cl-PF3ONS",
+      "relation": "has_endpoint",
+      "tail": "SR-p53"
+    },
+    {
+      "head": "PFOA",
+      "relation": "via_mechanism",
+      "tail": "PPARα激活"
+    },
+    {
+      "head": "PFOA",
+      "relation": "via_mechanism",
+      "tail": "氧化应激"
+    },
+    {
+      "head": "PFOA",
+      "relation": "via_mechanism",
+      "tail": "线粒体功能障碍"
+    },
+    {
+      "head": "PFOS",
+      "relation": "via_mechanism",
+      "tail": "PPARα激活"
+    },
+    {
+      "head": "PFOS",
+      "relation": "via_mechanism",
+      "tail": "甲状腺激素干扰"
+    },
+    {
+      "head": "PFOS",
+      "relation": "via_mechanism",
+      "tail": "免疫抑制"
+    },
+    {
+      "head": "PFOS",
+      "relation": "via_mechanism",
+      "tail": "氧化应激"
+    },
+    {
+      "head": "PFNA",
+      "relation": "via_mechanism",
+      "tail": "PPARα激活"
+    },
+    {
+      "head": "PFNA",
+      "relation": "via_mechanism",
+      "tail": "氧化应激"
+    },
+    {
+      "head": "PFDA",
+      "relation": "via_mechanism",
+      "tail": "PPARα激活"
+    },
+    {
+      "head": "PFDA",
+      "relation": "via_mechanism",
+      "tail": "脂质代谢干扰"
+    },
+    {
+      "head": "GenX",
+      "relation": "via_mechanism",
+      "tail": "肝脏毒性"
+    },
+    {
+      "head": "GenX",
+      "relation": "via_mechanism",
+      "tail": "肾脏毒性"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "via_mechanism",
+      "tail": "甲状腺激素干扰"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "via_mechanism",
+      "tail": "免疫抑制"
+    },
+    {
+      "head": "PFBS",
+      "relation": "via_mechanism",
+      "tail": "甲状腺激素干扰"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "地下水"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "土壤"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "海洋"
+    },
+    {
+      "head": "PFOA",
+      "relation": "exists_in",
+      "tail": "生物体"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "地下水"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "土壤"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "海洋"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "沉积物"
+    },
+    {
+      "head": "PFOS",
+      "relation": "exists_in",
+      "tail": "生物体"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "PFBS",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "PFBS",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "GenX",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "GenX",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "PFNA",
+      "relation": "exists_in",
+      "tail": "地表水"
+    },
+    {
+      "head": "PFNA",
+      "relation": "exists_in",
+      "tail": "海洋"
+    },
+    {
+      "head": "PFNA",
+      "relation": "exists_in",
+      "tail": "生物体"
+    },
+    {
+      "head": "PFDA",
+      "relation": "exists_in",
+      "tail": "海洋"
+    },
+    {
+      "head": "PFDA",
+      "relation": "exists_in",
+      "tail": "生物体"
+    },
+    {
+      "head": "TFA",
+      "relation": "exists_in",
+      "tail": "饮用水"
+    },
+    {
+      "head": "TFA",
+      "relation": "exists_in",
+      "tail": "大气"
+    },
+    {
+      "head": "PFOA",
+      "relation": "affects",
+      "tail": "鱼类"
+    },
+    {
+      "head": "PFOA",
+      "relation": "affects",
+      "tail": "哺乳动物"
+    },
+    {
+      "head": "PFOA",
+      "relation": "affects",
+      "tail": "人类"
+    },
+    {
+      "head": "PFOS",
+      "relation": "affects",
+      "tail": "鱼类"
+    },
+    {
+      "head": "PFOS",
+      "relation": "affects",
+      "tail": "甲壳类"
+    },
+    {
+      "head": "PFOS",
+      "relation": "affects",
+      "tail": "鸟类"
+    },
+    {
+      "head": "PFOS",
+      "relation": "affects",
+      "tail": "哺乳动物"
+    },
+    {
+      "head": "PFOS",
+      "relation": "affects",
+      "tail": "人类"
+    },
+    {
+      "head": "PFNA",
+      "relation": "affects",
+      "tail": "鱼类"
+    },
+    {
+      "head": "PFNA",
+      "relation": "affects",
+      "tail": "哺乳动物"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "affects",
+      "tail": "鱼类"
+    },
+    {
+      "head": "PFBS",
+      "relation": "affects",
+      "tail": "鱼类"
+    },
+    {
+      "head": "PFBS",
+      "relation": "affects",
+      "tail": "甲壳类"
+    },
+    {
+      "head": "GenX",
+      "relation": "affects",
+      "tail": "哺乳动物"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "肾毒性"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "甲状腺功能异常"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "免疫功能抑制"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "发育毒性"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "生殖毒性"
+    },
+    {
+      "head": "PFOA",
+      "relation": "causes",
+      "tail": "致癌性"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "甲状腺功能异常"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "免疫功能抑制"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "发育毒性"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "生殖毒性"
+    },
+    {
+      "head": "PFOS",
+      "relation": "causes",
+      "tail": "内分泌干扰"
+    },
+    {
+      "head": "PFNA",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PFNA",
+      "relation": "causes",
+      "tail": "内分泌干扰"
+    },
+    {
+      "head": "PFDA",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PFBS",
+      "relation": "causes",
+      "tail": "甲状腺功能异常"
+    },
+    {
+      "head": "GenX",
+      "relation": "causes",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "GenX",
+      "relation": "causes",
+      "tail": "肾毒性"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "causes",
+      "tail": "甲状腺功能异常"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "causes",
+      "tail": "免疫功能抑制"
+    },
+    {
+      "head": "PFOA",
+      "relation": "applies_to",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "PFOA",
+      "relation": "applies_to",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "PFOA",
+      "relation": "applies_to",
+      "tail": "GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)"
+    },
+    {
+      "head": "PFOA",
+      "relation": "applies_to",
+      "tail": "EPA PFAS 管控标准 (70 ng/L)"
+    },
+    {
+      "head": "PFOA",
+      "relation": "applies_to",
+      "tail": "欧盟 REACH 限制"
+    },
+    {
+      "head": "PFOS",
+      "relation": "applies_to",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "PFOS",
+      "relation": "applies_to",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "PFOS",
+      "relation": "applies_to",
+      "tail": "GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)"
+    },
+    {
+      "head": "PFOS",
+      "relation": "applies_to",
+      "tail": "EPA PFAS 管控标准 (70 ng/L)"
+    },
+    {
+      "head": "PFOS",
+      "relation": "applies_to",
+      "tail": "欧盟 REACH 限制"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "applies_to",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "applies_to",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "PFDA",
+      "relation": "applies_to",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "PFDA",
+      "relation": "applies_to",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "PFNA",
+      "relation": "applies_to",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "PFNA",
+      "relation": "applies_to",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "perfluoroalkyl chain length",
+      "relation": "influences_endpoint",
+      "tail": "BCF"
+    },
+    {
+      "head": "perfluoroalkyl chain length",
+      "relation": "influences_endpoint",
+      "tail": "bioaccumulation"
+    },
+    {
+      "head": "sulfonic acid group",
+      "relation": "influences_endpoint",
+      "tail": "persistence"
+    },
+    {
+      "head": "ether linkage",
+      "relation": "influences_endpoint",
+      "tail": "metabolic stability"
+    },
+    {
+      "head": "chlorine substituent",
+      "relation": "influences_endpoint",
+      "tail": "persistence"
+    },
+    {
+      "head": "PPARα激活",
+      "relation": "leads_to_effect",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "PPARα激活",
+      "relation": "leads_to_effect",
+      "tail": "代谢紊乱"
+    },
+    {
+      "head": "氧化应激",
+      "relation": "leads_to_effect",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "氧化应激",
+      "relation": "leads_to_effect",
+      "tail": "肾毒性"
+    },
+    {
+      "head": "氧化应激",
+      "relation": "leads_to_effect",
+      "tail": "致癌性"
+    },
+    {
+      "head": "线粒体功能障碍",
+      "relation": "leads_to_effect",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "线粒体功能障碍",
+      "relation": "leads_to_effect",
+      "tail": "肾毒性"
+    },
+    {
+      "head": "甲状腺激素干扰",
+      "relation": "leads_to_effect",
+      "tail": "甲状腺功能异常"
+    },
+    {
+      "head": "甲状腺激素干扰",
+      "relation": "leads_to_effect",
+      "tail": "发育毒性"
+    },
+    {
+      "head": "免疫抑制",
+      "relation": "leads_to_effect",
+      "tail": "免疫功能抑制"
+    },
+    {
+      "head": "内分泌干扰",
+      "relation": "leads_to_effect",
+      "tail": "生殖毒性"
+    },
+    {
+      "head": "内分泌干扰",
+      "relation": "leads_to_effect",
+      "tail": "发育毒性"
+    },
+    {
+      "head": "脂质代谢干扰",
+      "relation": "leads_to_effect",
+      "tail": "代谢紊乱"
+    },
+    {
+      "head": "肝脏毒性",
+      "relation": "leads_to_effect",
+      "tail": "肝毒性"
+    },
+    {
+      "head": "肾脏毒性",
+      "relation": "leads_to_effect",
+      "tail": "肾毒性"
+    },
+    {
+      "head": "饮用水",
+      "relation": "medium_affects_species",
+      "tail": "人类"
+    },
+    {
+      "head": "地表水",
+      "relation": "medium_affects_species",
+      "tail": "鱼类"
+    },
+    {
+      "head": "地表水",
+      "relation": "medium_affects_species",
+      "tail": "甲壳类"
+    },
+    {
+      "head": "地表水",
+      "relation": "medium_affects_species",
+      "tail": "藻类"
+    },
+    {
+      "head": "海洋",
+      "relation": "medium_affects_species",
+      "tail": "鱼类"
+    },
+    {
+      "head": "海洋",
+      "relation": "medium_affects_species",
+      "tail": "甲壳类"
+    },
+    {
+      "head": "海洋",
+      "relation": "medium_affects_species",
+      "tail": "海洋哺乳动物"
+    },
+    {
+      "head": "海洋",
+      "relation": "medium_affects_species",
+      "tail": "鸟类"
+    },
+    {
+      "head": "土壤",
+      "relation": "medium_affects_species",
+      "tail": "两栖类"
+    },
+    {
+      "head": "土壤",
+      "relation": "medium_affects_species",
+      "tail": "哺乳动物"
+    },
+    {
+      "head": "大气",
+      "relation": "medium_affects_species",
+      "tail": "人类"
+    },
+    {
+      "head": "人类",
+      "relation": "protected_by",
+      "tail": "GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)"
+    },
+    {
+      "head": "人类",
+      "relation": "protected_by",
+      "tail": "EPA PFAS 管控标准 (70 ng/L)"
+    },
+    {
+      "head": "鱼类",
+      "relation": "protected_by",
+      "tail": "GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)"
+    },
+    {
+      "head": "鱼类",
+      "relation": "protected_by",
+      "tail": "EPA PFAS 管控标准 (70 ng/L)"
+    },
+    {
+      "head": "甲壳类",
+      "relation": "protected_by",
+      "tail": "GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)"
+    },
+    {
+      "head": "甲壳类",
+      "relation": "protected_by",
+      "tail": "EPA PFAS 管控标准 (70 ng/L)"
+    },
+    {
+      "head": "肝毒性",
+      "relation": "prevented_by",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "肝毒性",
+      "relation": "prevented_by",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "肾毒性",
+      "relation": "prevented_by",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "肾毒性",
+      "relation": "prevented_by",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "发育毒性",
+      "relation": "prevented_by",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "发育毒性",
+      "relation": "prevented_by",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "免疫功能抑制",
+      "relation": "prevented_by",
+      "tail": "中国新污染物治理行动方案"
+    },
+    {
+      "head": "免疫功能抑制",
+      "relation": "prevented_by",
+      "tail": "斯德哥尔摩公约 (POPs)"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "International journal of hygiene and environmental health"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "International journal of hygiene and environmental health"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental health perspectives"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environmental health perspectives"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental science & technology"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "发表于",
+      "tail": "Environmental science & technology"
+    },
+    {
+      "head": "PFBA",
+      "relation": "发表于",
+      "tail": "Environmental science & technology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "The Science of the total environment"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "The Science of the total environment"
+    },
+    {
+      "head": "PFBS",
+      "relation": "发表于",
+      "tail": "The Science of the total environment"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "The Science of the total environment"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "adverse"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "cancer"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Regulatory toxicology and pharmacology : RTP"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "adverse"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "cancer"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Regulatory toxicology and pharmacology : RTP"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Journal of hazardous materials"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFPeA",
+      "relation": "发表于",
+      "tail": "Journal of hazardous materials"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental research"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environmental research"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "health effect"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "cancer"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "研究涉及",
+      "tail": "health effect"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "研究涉及",
+      "tail": "cancer"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Environmental research"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Foods (Basel, Switzerland)"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "bioRxiv : the preprint server for biology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "bioRxiv : the preprint server for biology"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFDA",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFDA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "bioRxiv : the preprint server for biology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Nature communications"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "health effect"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Functional & integrative genomics"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "health effect"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Functional & integrative genomics"
+    },
+    {
+      "head": "FOSA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "FOSA",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "FOSA",
+      "relation": "通过机制",
+      "tail": "oxidative stress"
+    },
+    {
+      "head": "FOSA",
+      "relation": "发表于",
+      "tail": "Environmental research"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Heliyon"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Heliyon"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Food chemistry"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "Food chemistry"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Food chemistry"
+    },
+    {
+      "head": "PFBA",
+      "relation": "发表于",
+      "tail": "Food chemistry"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFBS",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFBS",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFBS",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFBA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFBA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFBA",
+      "relation": "发表于",
+      "tail": "Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental science and pollution research international"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental toxicology and chemistry"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environmental toxicology and chemistry"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Environmental toxicology and chemistry"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Environmental toxicology and chemistry"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Journal of xenobiotics"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Journal of xenobiotics"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFNA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFNA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFNA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFNA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFDA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFDA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFBS",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "PFBS",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFBS",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFBS",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "HFPO-DA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "FOSA",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "FOSA",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "FOSA",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "FOSA",
+      "relation": "发表于",
+      "tail": "Toxicology and applied pharmacology"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "endocrine"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "developmental"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "endocrine"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "developmental"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "adverse"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "endocrine"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "developmental"
+    },
+    {
+      "head": "PFNA",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFNA",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "PFNA",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "adverse"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "endocrine"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "developmental"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "adverse"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "endocrine"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "developmental"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "mechanism"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "pathway"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Chemosphere"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Chemosphere"
+    },
+    {
+      "head": "FOSA",
+      "relation": "发表于",
+      "tail": "Chemosphere"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental science. Processes & impacts"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environmental science. Processes & impacts"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "inhibition"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Archives of toxicology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "inhibition"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Archives of toxicology"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "receptor"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "activation"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "inhibition"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "binding"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "Archives of toxicology"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "toxic"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFNA",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "International journal of molecular sciences"
+    },
+    {
+      "head": "PFOA",
+      "relation": "通过机制",
+      "tail": "oxidative stress"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Environmental pollution (Barking, Essex : 1987)"
+    },
+    {
+      "head": "GenX",
+      "relation": "通过机制",
+      "tail": "oxidative stress"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "Environmental pollution (Barking, Essex : 1987)"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "Environmental health perspectives"
+    },
+    {
+      "head": "PFOS",
+      "relation": "通过机制",
+      "tail": "oxidative stress"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "通过机制",
+      "tail": "oxidative stress"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Archives of toxicology"
+    },
+    {
+      "head": "GenX",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFNA",
+      "relation": "研究涉及",
+      "tail": "toxicity"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFBS",
+      "relation": "研究涉及",
+      "tail": "immune"
+    },
+    {
+      "head": "PFBS",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFBS",
+      "relation": "发表于",
+      "tail": "Environment international"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Biochemistry"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Biochemistry"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "Biochemistry"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Cardiovascular toxicology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Cardiovascular toxicology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Food additives & contaminants. Part B, Surveillance"
+    },
+    {
+      "head": "PFBA",
+      "relation": "研究涉及",
+      "tail": "liver"
+    },
+    {
+      "head": "PFBA",
+      "relation": "发表于",
+      "tail": "Food additives & contaminants. Part B, Surveillance"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Environmental science & technology"
+    },
+    {
+      "head": "GenX",
+      "relation": "发表于",
+      "tail": "Environmental research"
+    },
+    {
+      "head": "PFOA",
+      "relation": "研究涉及",
+      "tail": "thyroid"
+    },
+    {
+      "head": "PFOS",
+      "relation": "研究涉及",
+      "tail": "thyroid"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "health effect"
+    },
+    {
+      "head": "PFDA",
+      "relation": "研究涉及",
+      "tail": "thyroid"
+    },
+    {
+      "head": "PFDA",
+      "relation": "发表于",
+      "tail": "Chemosphere"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Journal of hazardous materials"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "The Journal of toxicological sciences"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "The Journal of toxicological sciences"
+    },
+    {
+      "head": "PFOA",
+      "relation": "发表于",
+      "tail": "Journal of exposure science & environmental epidemiology"
+    },
+    {
+      "head": "PFOS",
+      "relation": "发表于",
+      "tail": "Journal of exposure science & environmental epidemiology"
+    },
+    {
+      "head": "PFHxA",
+      "relation": "发表于",
+      "tail": "Journal of hazardous materials"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "cancer"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "研究涉及",
+      "tail": "thyroid"
+    },
+    {
+      "head": "PFHxS",
+      "relation": "发表于",
+      "tail": "Heliyon"
+    }
+  ],
+  "mechanisms": [
+    {
+      "name": "PPARalpha activation",
+      "description": "PFAS activate PPARalpha receptor in liver, causing lipid metabolism disorders and hepatomegaly.",
+      "source": "Sunderland et al., 2019"
+    },
+    {
+      "name": "Oxidative stress",
+      "description": "PFAS generate reactive oxygen species, causing DNA and protein damage.",
+      "source": "Fenton et al., 2021"
+    },
+    {
+      "name": "Thyroid disruption",
+      "description": "PFAS compete with thyroid hormone for transport protein binding.",
+      "source": "Post et al., 2017"
+    },
+    {
+      "name": "Immunosuppression",
+      "description": "PFAS suppress B lymphocyte differentiation and antibody production.",
+      "source": "Grandjean et al., 2012"
+    },
+    {
+      "name": "Mitochondrial dysfunction",
+      "description": "PFAS interfere with electron transport chain in mitochondria.",
+      "source": "Sheng et al., 2022"
+    },
+    {
+      "name": "Endocrine disruption",
+      "description": "PFAS interfere with estrogen, androgen, and thyroid hormone signaling.",
+      "source": "ATSDR, 2021"
+    }
+  ],
+  "regulations": [
+    {
+      "name": "GB 5749-2022",
+      "country": "China",
+      "limit": "PFOS+PFOA <= 40 ng/L",
+      "year": 2022
+    },
+    {
+      "name": "EPA NPDWR",
+      "country": "USA",
+      "limit": "PFOA <= 4 ng/L, PFOS <= 4 ng/L",
+      "year": 2023
+    },
+    {
+      "name": "WHO Guidelines",
+      "country": "International",
+      "limit": "PFOA <= 100 ng/L, PFOS <= 40 ng/L",
+      "year": 2022
+    },
+    {
+      "name": "EU REACH",
+      "country": "EU",
+      "limit": "PFAS restriction proposal",
+      "year": 2023
+    },
+    {
+      "name": "Stockholm Convention",
+      "country": "UN",
+      "limit": "PFOS/PFOA/PFHxS listed as POPs",
+      "year": 2009
+    }
+  ]
+}

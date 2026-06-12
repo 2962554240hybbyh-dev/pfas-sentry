@@ -1,0 +1,43 @@
+flowchart TD
+    DB1[("Tox21
+毒理数据")] -->|筛选PFAS| Raw["原始PFAS
+数据集(500+)"]
+    DB2[("PubChem
+分子属性")] -->|SMILES+属性| Raw
+    DB3[("EPA CompTox
+PFAS列表")] -->|化合物列表| Raw
+
+    Raw -->|去重+清洗| Clean["清洗后
+数据集"]
+    Clean -->|RDKit| Desc["分子描述符
+(500+特征)"]
+    Clean -->|PyG| Graph["分子图
+数据集"]
+    Clean -->|8终点| Labels["毒性标签
+矩阵"]
+
+    Desc -->|标准化| QSAR["QSAR模型
+(6种算法)"]
+    Graph -->|图特征| GNN["GNN模型
+(5种架构)"]
+    Labels --> QSAR
+    Labels --> GNN
+
+    QSAR -->|预测概率| Ensemble["集成模型"]
+    GNN -->|预测概率| Ensemble
+
+    Ensemble -->|预测100种| Emerging["新兴PFAS
+替代物预测"]
+
+    PFAS_KG["PFAS知识图谱
+(Neo4j)"] --> VectorDB["FAISS向量库"]
+    Literature["100篇文献"] -->|解析| VectorDB
+    Regulations["法规标准"] -->|编码| VectorDB
+    Emerging -->|结果| VectorDB
+
+    VectorDB --> RAG["RAG系统"]
+    PFAS_KG --> RAG
+
+    RAG --> F1["毒性查询"]
+    RAG --> F2["机制解释"]
+    RAG --> F3["风险报告"]

@@ -1,0 +1,443 @@
+﻿head,relation,tail
+PFOA,contains,carboxylic acid group
+PFOA,contains,perfluoroalkyl chain
+PFOS,contains,sulfonic acid group
+PFOS,contains,perfluoroalkyl chain
+PFNA,contains,carboxylic acid group
+PFNA,contains,perfluoroalkyl chain
+PFDA,contains,carboxylic acid group
+PFDA,contains,perfluoroalkyl chain
+PFHxA,contains,carboxylic acid group
+PFHxA,contains,perfluoroalkyl chain
+PFBS,contains,sulfonic acid group
+PFBS,contains,perfluoroalkyl chain
+PFHxS,contains,sulfonic acid group
+PFHxS,contains,perfluoroalkyl chain
+GenX,contains,carboxylic acid group
+GenX,contains,perfluoroalkyl chain
+PFBA,contains,carboxylic acid group
+PFBA,contains,perfluoroalkyl chain
+PFPeA,contains,carboxylic acid group
+PFPeA,contains,perfluoroalkyl chain
+PFUnDA,contains,carboxylic acid group
+PFUnDA,contains,perfluoroalkyl chain
+PFDoDA,contains,carboxylic acid group
+PFDoDA,contains,perfluoroalkyl chain
+FOSA,contains,sulfonamide group
+FOSA,contains,perfluoroalkyl chain
+TFMS,contains,sulfonic acid group
+TFMS,contains,perfluoroalkyl chain
+TFA,contains,carboxylic acid group
+TFA,contains,perfluoroalkyl chain
+ADONA,contains,carboxylic acid group
+ADONA,contains,perfluoroalkyl chain
+6:2 FTCA,contains,carboxylic acid group
+6:2 FTCA,contains,perfluoroalkyl chain
+8:2 FTCA,contains,carboxylic acid group
+8:2 FTCA,contains,perfluoroalkyl chain
+9Cl-PF3ONS,contains,sulfonic acid group
+9Cl-PF3ONS,contains,perfluoroalkyl chain
+GenX,contains,ether linkage
+9Cl-PF3ONS,contains,chlorine substituent
+6:2 FTCA,contains,fluorotelomer chain
+PFOA,has_endpoint,NR-AR
+PFOA,has_endpoint,NR-AhR
+PFOA,has_endpoint,SR-MMP
+PFOA,has_endpoint,SR-p53
+PFOA,has_endpoint,BCF
+PFOS,has_endpoint,NR-AR
+PFOS,has_endpoint,NR-AhR
+PFOS,has_endpoint,SR-HSE
+PFOS,has_endpoint,SR-MMP
+PFOS,has_endpoint,SR-p53
+PFOS,has_endpoint,BCF
+PFNA,has_endpoint,NR-AR
+PFNA,has_endpoint,NR-AhR
+PFNA,has_endpoint,SR-MMP
+PFNA,has_endpoint,BCF
+PFDA,has_endpoint,NR-AhR
+PFDA,has_endpoint,SR-p53
+PFDA,has_endpoint,BCF
+PFHxA,has_endpoint,NR-AhR
+PFHxA,has_endpoint,SR-MMP
+PFBS,has_endpoint,NR-AhR
+PFBS,has_endpoint,SR-HSE
+PFHxS,has_endpoint,NR-AhR
+PFHxS,has_endpoint,SR-MMP
+PFHxS,has_endpoint,BCF
+GenX,has_endpoint,NR-AhR
+GenX,has_endpoint,SR-p53
+PFBA,has_endpoint,SR-HSE
+PFUnDA,has_endpoint,NR-AR
+PFUnDA,has_endpoint,NR-AhR
+PFUnDA,has_endpoint,SR-MMP
+PFUnDA,has_endpoint,SR-p53
+PFUnDA,has_endpoint,BCF
+PFDoDA,has_endpoint,NR-AR
+PFDoDA,has_endpoint,BCF
+FOSA,has_endpoint,NR-AhR
+FOSA,has_endpoint,SR-MMP
+N-EtFOSE,has_endpoint,NR-AhR
+N-EtFOSE,has_endpoint,SR-HSE
+TFA,has_endpoint,SR-HSE
+ADONA,has_endpoint,NR-AhR
+9Cl-PF3ONS,has_endpoint,NR-AhR
+9Cl-PF3ONS,has_endpoint,SR-p53
+PFOA,via_mechanism,PPARα激活
+PFOA,via_mechanism,氧化应激
+PFOA,via_mechanism,线粒体功能障碍
+PFOS,via_mechanism,PPARα激活
+PFOS,via_mechanism,甲状腺激素干扰
+PFOS,via_mechanism,免疫抑制
+PFOS,via_mechanism,氧化应激
+PFNA,via_mechanism,PPARα激活
+PFNA,via_mechanism,氧化应激
+PFDA,via_mechanism,PPARα激活
+PFDA,via_mechanism,脂质代谢干扰
+GenX,via_mechanism,肝脏毒性
+GenX,via_mechanism,肾脏毒性
+PFHxS,via_mechanism,甲状腺激素干扰
+PFHxS,via_mechanism,免疫抑制
+PFBS,via_mechanism,甲状腺激素干扰
+PFOA,exists_in,饮用水
+PFOA,exists_in,地表水
+PFOA,exists_in,地下水
+PFOA,exists_in,土壤
+PFOA,exists_in,海洋
+PFOA,exists_in,生物体
+PFOS,exists_in,饮用水
+PFOS,exists_in,地表水
+PFOS,exists_in,地下水
+PFOS,exists_in,土壤
+PFOS,exists_in,海洋
+PFOS,exists_in,沉积物
+PFOS,exists_in,生物体
+PFHxA,exists_in,饮用水
+PFHxA,exists_in,地表水
+PFBS,exists_in,饮用水
+PFBS,exists_in,地表水
+GenX,exists_in,饮用水
+GenX,exists_in,地表水
+PFNA,exists_in,地表水
+PFNA,exists_in,海洋
+PFNA,exists_in,生物体
+PFDA,exists_in,海洋
+PFDA,exists_in,生物体
+TFA,exists_in,饮用水
+TFA,exists_in,大气
+PFOA,affects,鱼类
+PFOA,affects,哺乳动物
+PFOA,affects,人类
+PFOS,affects,鱼类
+PFOS,affects,甲壳类
+PFOS,affects,鸟类
+PFOS,affects,哺乳动物
+PFOS,affects,人类
+PFNA,affects,鱼类
+PFNA,affects,哺乳动物
+PFHxA,affects,鱼类
+PFBS,affects,鱼类
+PFBS,affects,甲壳类
+GenX,affects,哺乳动物
+PFOA,causes,肝毒性
+PFOA,causes,肾毒性
+PFOA,causes,甲状腺功能异常
+PFOA,causes,免疫功能抑制
+PFOA,causes,发育毒性
+PFOA,causes,生殖毒性
+PFOA,causes,致癌性
+PFOS,causes,肝毒性
+PFOS,causes,甲状腺功能异常
+PFOS,causes,免疫功能抑制
+PFOS,causes,发育毒性
+PFOS,causes,生殖毒性
+PFOS,causes,内分泌干扰
+PFNA,causes,肝毒性
+PFNA,causes,内分泌干扰
+PFDA,causes,肝毒性
+PFHxA,causes,肝毒性
+PFBS,causes,甲状腺功能异常
+GenX,causes,肝毒性
+GenX,causes,肾毒性
+PFHxS,causes,甲状腺功能异常
+PFHxS,causes,免疫功能抑制
+PFOA,applies_to,中国新污染物治理行动方案
+PFOA,applies_to,斯德哥尔摩公约 (POPs)
+PFOA,applies_to,GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)
+PFOA,applies_to,EPA PFAS 管控标准 (70 ng/L)
+PFOA,applies_to,欧盟 REACH 限制
+PFOS,applies_to,中国新污染物治理行动方案
+PFOS,applies_to,斯德哥尔摩公约 (POPs)
+PFOS,applies_to,GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)
+PFOS,applies_to,EPA PFAS 管控标准 (70 ng/L)
+PFOS,applies_to,欧盟 REACH 限制
+PFHxS,applies_to,中国新污染物治理行动方案
+PFHxS,applies_to,斯德哥尔摩公约 (POPs)
+PFDA,applies_to,中国新污染物治理行动方案
+PFDA,applies_to,斯德哥尔摩公约 (POPs)
+PFNA,applies_to,中国新污染物治理行动方案
+PFNA,applies_to,斯德哥尔摩公约 (POPs)
+perfluoroalkyl chain length,influences_endpoint,BCF
+perfluoroalkyl chain length,influences_endpoint,bioaccumulation
+sulfonic acid group,influences_endpoint,persistence
+ether linkage,influences_endpoint,metabolic stability
+chlorine substituent,influences_endpoint,persistence
+PPARα激活,leads_to_effect,肝毒性
+PPARα激活,leads_to_effect,代谢紊乱
+氧化应激,leads_to_effect,肝毒性
+氧化应激,leads_to_effect,肾毒性
+氧化应激,leads_to_effect,致癌性
+线粒体功能障碍,leads_to_effect,肝毒性
+线粒体功能障碍,leads_to_effect,肾毒性
+甲状腺激素干扰,leads_to_effect,甲状腺功能异常
+甲状腺激素干扰,leads_to_effect,发育毒性
+免疫抑制,leads_to_effect,免疫功能抑制
+内分泌干扰,leads_to_effect,生殖毒性
+内分泌干扰,leads_to_effect,发育毒性
+脂质代谢干扰,leads_to_effect,代谢紊乱
+肝脏毒性,leads_to_effect,肝毒性
+肾脏毒性,leads_to_effect,肾毒性
+饮用水,medium_affects_species,人类
+地表水,medium_affects_species,鱼类
+地表水,medium_affects_species,甲壳类
+地表水,medium_affects_species,藻类
+海洋,medium_affects_species,鱼类
+海洋,medium_affects_species,甲壳类
+海洋,medium_affects_species,海洋哺乳动物
+海洋,medium_affects_species,鸟类
+土壤,medium_affects_species,两栖类
+土壤,medium_affects_species,哺乳动物
+大气,medium_affects_species,人类
+人类,protected_by,GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)
+人类,protected_by,EPA PFAS 管控标准 (70 ng/L)
+鱼类,protected_by,GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)
+鱼类,protected_by,EPA PFAS 管控标准 (70 ng/L)
+甲壳类,protected_by,GB 5749-2022 生活饮用水标准 (40 ng/L PFOS+PFOA)
+甲壳类,protected_by,EPA PFAS 管控标准 (70 ng/L)
+肝毒性,prevented_by,中国新污染物治理行动方案
+肝毒性,prevented_by,斯德哥尔摩公约 (POPs)
+肾毒性,prevented_by,中国新污染物治理行动方案
+肾毒性,prevented_by,斯德哥尔摩公约 (POPs)
+发育毒性,prevented_by,中国新污染物治理行动方案
+发育毒性,prevented_by,斯德哥尔摩公约 (POPs)
+免疫功能抑制,prevented_by,中国新污染物治理行动方案
+免疫功能抑制,prevented_by,斯德哥尔摩公约 (POPs)
+PFOA,研究涉及,toxic
+PFOA,发表于,International journal of hygiene and environmental health
+PFOS,研究涉及,toxic
+PFOS,发表于,International journal of hygiene and environmental health
+PFOA,通过机制,mechanism
+PFOA,发表于,Environmental health perspectives
+PFOS,通过机制,mechanism
+PFOS,发表于,Environmental health perspectives
+PFOA,发表于,Environmental science & technology
+HFPO-DA,发表于,Environmental science & technology
+PFBA,发表于,Environmental science & technology
+PFOS,发表于,The Science of the total environment
+PFHxA,发表于,The Science of the total environment
+PFBS,发表于,The Science of the total environment
+PFHxS,发表于,The Science of the total environment
+PFOA,研究涉及,toxicity
+PFOA,研究涉及,adverse
+PFOA,研究涉及,cancer
+PFOA,发表于,Regulatory toxicology and pharmacology : RTP
+PFOS,研究涉及,toxicity
+PFOS,研究涉及,adverse
+PFOS,研究涉及,cancer
+PFOS,发表于,Regulatory toxicology and pharmacology : RTP
+PFOS,通过机制,pathway
+PFOS,通过机制,receptor
+PFOS,通过机制,activation
+PFOS,发表于,Journal of hazardous materials
+PFPeA,研究涉及,toxicity
+PFPeA,研究涉及,toxic
+PFPeA,通过机制,mechanism
+PFPeA,通过机制,pathway
+PFPeA,通过机制,receptor
+PFPeA,通过机制,activation
+PFPeA,发表于,Journal of hazardous materials
+PFOA,发表于,Environmental research
+PFOS,发表于,Environmental research
+GenX,研究涉及,health effect
+GenX,研究涉及,cancer
+GenX,发表于,International journal of molecular sciences
+HFPO-DA,研究涉及,health effect
+HFPO-DA,研究涉及,cancer
+HFPO-DA,发表于,International journal of molecular sciences
+PFHxS,通过机制,pathway
+PFHxS,发表于,Environmental research
+PFHxA,通过机制,pathway
+PFHxA,发表于,"Foods (Basel, Switzerland)"
+PFOA,通过机制,binding
+PFOA,发表于,bioRxiv : the preprint server for biology
+PFOS,通过机制,binding
+PFOS,发表于,bioRxiv : the preprint server for biology
+PFDA,研究涉及,toxicity
+PFDA,研究涉及,toxic
+PFDA,通过机制,mechanism
+PFDA,通过机制,binding
+PFDA,发表于,bioRxiv : the preprint server for biology
+PFOS,研究涉及,immune
+PFOS,发表于,Nature communications
+PFOA,研究涉及,health effect
+PFOA,研究涉及,immune
+PFOA,发表于,Functional & integrative genomics
+PFOS,研究涉及,health effect
+PFOS,发表于,Functional & integrative genomics
+FOSA,研究涉及,toxic
+FOSA,研究涉及,immune
+FOSA,通过机制,oxidative stress
+FOSA,发表于,Environmental research
+PFOA,通过机制,pathway
+PFOA,通过机制,receptor
+PFOA,发表于,Heliyon
+PFOS,发表于,Heliyon
+PFOA,发表于,Food chemistry
+PFDA,发表于,Food chemistry
+PFHxA,发表于,Food chemistry
+PFBA,发表于,Food chemistry
+PFOA,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFOS,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFHxA,研究涉及,toxicity
+PFHxA,研究涉及,toxic
+PFHxA,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFBS,研究涉及,toxicity
+PFBS,研究涉及,toxic
+PFBS,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFHxS,研究涉及,toxicity
+PFHxS,研究涉及,toxic
+PFHxS,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFBA,研究涉及,toxicity
+PFBA,研究涉及,toxic
+PFBA,发表于,"Journal of environmental science and health. Part. B, Pesticides, food contaminants, and agricultural wastes"
+PFOA,发表于,Environmental science and pollution research international
+PFOA,发表于,Environmental toxicology and chemistry
+PFOS,发表于,Environmental toxicology and chemistry
+PFHxA,通过机制,receptor
+PFHxA,发表于,Environmental toxicology and chemistry
+PFHxS,通过机制,receptor
+PFHxS,发表于,Environmental toxicology and chemistry
+PFOA,发表于,Journal of xenobiotics
+PFOS,发表于,Journal of xenobiotics
+PFOA,通过机制,activation
+PFOA,发表于,Toxicology and applied pharmacology
+PFOS,发表于,Toxicology and applied pharmacology
+PFNA,通过机制,receptor
+PFNA,通过机制,activation
+PFNA,通过机制,binding
+PFNA,发表于,Toxicology and applied pharmacology
+PFDA,通过机制,receptor
+PFDA,通过机制,activation
+PFDA,发表于,Toxicology and applied pharmacology
+PFHxA,通过机制,activation
+PFHxA,通过机制,binding
+PFHxA,发表于,Toxicology and applied pharmacology
+PFBS,通过机制,receptor
+PFBS,通过机制,activation
+PFBS,通过机制,binding
+PFBS,发表于,Toxicology and applied pharmacology
+PFHxS,通过机制,activation
+PFHxS,通过机制,binding
+PFHxS,发表于,Toxicology and applied pharmacology
+HFPO-DA,通过机制,receptor
+HFPO-DA,通过机制,activation
+HFPO-DA,通过机制,binding
+HFPO-DA,发表于,Toxicology and applied pharmacology
+FOSA,通过机制,receptor
+FOSA,通过机制,activation
+FOSA,通过机制,binding
+FOSA,发表于,Toxicology and applied pharmacology
+PFOA,研究涉及,endocrine
+PFOA,研究涉及,liver
+PFOA,研究涉及,developmental
+PFOA,发表于,Environment international
+PFOS,研究涉及,endocrine
+PFOS,研究涉及,liver
+PFOS,研究涉及,developmental
+PFOS,发表于,Environment international
+PFNA,研究涉及,adverse
+PFNA,研究涉及,endocrine
+PFNA,研究涉及,liver
+PFNA,研究涉及,developmental
+PFNA,通过机制,mechanism
+PFNA,通过机制,pathway
+PFNA,发表于,Environment international
+PFHxS,研究涉及,adverse
+PFHxS,研究涉及,endocrine
+PFHxS,研究涉及,liver
+PFHxS,研究涉及,developmental
+PFHxS,通过机制,mechanism
+PFHxS,发表于,Environment international
+GenX,研究涉及,adverse
+GenX,研究涉及,endocrine
+GenX,研究涉及,liver
+GenX,研究涉及,developmental
+GenX,通过机制,mechanism
+GenX,通过机制,pathway
+GenX,发表于,Environment international
+PFOA,发表于,Chemosphere
+PFOS,发表于,Chemosphere
+FOSA,发表于,Chemosphere
+PFOA,发表于,Environmental science. Processes & impacts
+PFOS,发表于,Environmental science. Processes & impacts
+PFOA,通过机制,inhibition
+PFOA,发表于,Archives of toxicology
+PFOS,通过机制,inhibition
+PFOS,发表于,Archives of toxicology
+GenX,研究涉及,toxicity
+GenX,研究涉及,toxic
+GenX,通过机制,receptor
+GenX,通过机制,activation
+GenX,通过机制,inhibition
+GenX,通过机制,binding
+GenX,发表于,Archives of toxicology
+PFOA,发表于,International journal of molecular sciences
+PFOS,发表于,International journal of molecular sciences
+PFNA,研究涉及,toxic
+PFNA,研究涉及,immune
+PFNA,发表于,International journal of molecular sciences
+PFHxS,研究涉及,immune
+PFHxS,发表于,International journal of molecular sciences
+PFOA,通过机制,oxidative stress
+PFOA,发表于,"Environmental pollution (Barking, Essex : 1987)"
+GenX,通过机制,oxidative stress
+GenX,发表于,"Environmental pollution (Barking, Essex : 1987)"
+GenX,发表于,Environmental health perspectives
+PFOS,通过机制,oxidative stress
+PFHxS,通过机制,oxidative stress
+PFHxS,发表于,Archives of toxicology
+GenX,研究涉及,immune
+PFNA,研究涉及,toxicity
+PFDA,研究涉及,immune
+PFDA,研究涉及,liver
+PFDA,发表于,Environment international
+PFHxA,研究涉及,immune
+PFHxA,研究涉及,liver
+PFHxA,发表于,Environment international
+PFBS,研究涉及,immune
+PFBS,研究涉及,liver
+PFBS,发表于,Environment international
+PFOA,发表于,Biochemistry
+PFOS,发表于,Biochemistry
+PFDA,发表于,Biochemistry
+PFOA,发表于,Cardiovascular toxicology
+PFOS,发表于,Cardiovascular toxicology
+PFOS,发表于,"Food additives & contaminants. Part B, Surveillance"
+PFBA,研究涉及,liver
+PFBA,发表于,"Food additives & contaminants. Part B, Surveillance"
+PFOS,发表于,Environmental science & technology
+GenX,发表于,Environmental research
+PFOA,研究涉及,thyroid
+PFOS,研究涉及,thyroid
+PFDA,研究涉及,health effect
+PFDA,研究涉及,thyroid
+PFDA,发表于,Chemosphere
+PFOA,发表于,Journal of hazardous materials
+PFOA,发表于,The Journal of toxicological sciences
+PFOS,发表于,The Journal of toxicological sciences
+PFOA,发表于,Journal of exposure science & environmental epidemiology
+PFOS,发表于,Journal of exposure science & environmental epidemiology
+PFHxA,发表于,Journal of hazardous materials
+PFHxS,研究涉及,cancer
+PFHxS,研究涉及,thyroid
+PFHxS,发表于,Heliyon

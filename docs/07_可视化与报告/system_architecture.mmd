@@ -1,0 +1,84 @@
+graph TB
+    subgraph 用户层["👤 用户交互层"]
+        UI1["毒性预测查询"]
+        UI2["毒性机制解释"]
+        UI3["风险评估报告"]
+    end
+
+    subgraph RAG层["🧠 上层：RAG 增强风险评估系统"]
+        direction TB
+        RAG_Core["LangChain RAG 引擎"]
+        Retriever["混合检索器<br/>(向量+关键词)"]
+        Reranker["Cohere Rerank<br/>重排序模块"]
+        Compressor["LLMLingua<br/>上下文压缩"]
+        Citation["引用溯源模块"]
+
+        RAG_Core --> Retriever
+        Retriever --> Reranker
+        Reranker --> Compressor
+        Compressor --> Citation
+    end
+
+    subgraph 知识层["📚 中层：多源异构知识库"]
+        direction LR
+        FAISS[("FAISS 向量库<br/>文献+法规+预测")]
+        Neo4j[("Neo4j 知识图谱<br/>8类实体×12类关系")]
+        Docs["文献数据库<br/>100篇高被引论文"]
+        Regs["法规标准库<br/>中美欧国际标准"]
+
+        Docs --> FAISS
+        Regs --> FAISS
+        Neo4j --> FAISS
+    end
+
+    subgraph 预测层["🔬 底层：GNN+QSAR 双模型预测引擎"]
+        direction LR
+        subgraph QSAR["QSAR 传统模型"]
+            XGBoost["XGBoost"]
+            LightGBM["LightGBM"]
+            RF["Random Forest"]
+            SVM["SVM"]
+        end
+        subgraph GNN["GNN 图模型"]
+            GIN["GIN"]
+            GAT["GAT"]
+            GCN["GCN"]
+            MPNN["MPNN"]
+        end
+        Ensemble["加权集成模型"]
+        SHAP_M["SHAP/GNNExplainer<br/>模型解释"]
+
+        XGBoost --> Ensemble
+        LightGBM --> Ensemble
+        GIN --> Ensemble
+        GAT --> Ensemble
+        Ensemble --> SHAP_M
+    end
+
+    subgraph 数据层["💾 数据基础层"]
+        direction LR
+        Tox21["Tox21<br/>毒理数据"]
+        PubChem["PubChem<br/>分子属性"]
+        CompTox["EPA CompTox<br/>PFAS列表"]
+        ECOTOX["ECOTOX<br/>生态毒理"]
+        Literature["文献数据<br/>100篇论文"]
+    end
+
+    用户层 --> RAG层
+    RAG层 --> 知识层
+    知识层 --> 预测层
+    预测层 --> 数据层
+
+    UI1 -->|"SMILES/化合物名"| RAG_Core
+    UI2 -->|"化合物名"| RAG_Core
+    UI3 -->|"化合物名/SMILES"| RAG_Core
+
+    RAG_Core -->|"向量检索"| FAISS
+    RAG_Core -->|"图谱查询"| Neo4j
+    RAG_Core -->|"调用模型"| Ensemble
+
+    style 用户层 fill:#E3F2FD,stroke:#1565C0
+    style RAG层 fill:#FFF3E0,stroke:#E65100
+    style 知识层 fill:#E8F5E9,stroke:#2E7D32
+    style 预测层 fill:#FCE4EC,stroke:#C62828
+    style 数据层 fill:#F3E5F5,stroke:#6A1B9A

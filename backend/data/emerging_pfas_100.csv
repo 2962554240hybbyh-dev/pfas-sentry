@@ -1,0 +1,101 @@
+﻿ID,SMILES,Name,Category,ChainLength
+PFCA-C3,OC(=O)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C3 carboxylic acid,PFCA_variant,3
+PFCA-C4,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C4 carboxylic acid,PFCA_variant,4
+PFCA-C5,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C5 carboxylic acid,PFCA_variant,5
+PFCA-C6,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C6 carboxylic acid,PFCA_variant,6
+PFCA-C7,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C7 carboxylic acid,PFCA_variant,7
+PFCA-C8,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C8 carboxylic acid,PFCA_variant,8
+PFCA-C9,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C9 carboxylic acid,PFCA_variant,9
+PFCA-C10,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C10 carboxylic acid,PFCA_variant,10
+PFCA-C11,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C11 carboxylic acid,PFCA_variant,11
+PFCA-C12,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C12 carboxylic acid,PFCA_variant,12
+PFCA-C13,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C13 carboxylic acid,PFCA_variant,13
+PFCA-C14,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C14 carboxylic acid,PFCA_variant,14
+PFSA-C3,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C3 sulfonic acid,PFSA_variant,3
+PFSA-C4,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C4 sulfonic acid,PFSA_variant,4
+PFSA-C5,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C5 sulfonic acid,PFSA_variant,5
+PFSA-C6,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C6 sulfonic acid,PFSA_variant,6
+PFSA-C7,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C7 sulfonic acid,PFSA_variant,7
+PFSA-C8,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C8 sulfonic acid,PFSA_variant,8
+PFSA-C9,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C9 sulfonic acid,PFSA_variant,9
+PFSA-C10,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C10 sulfonic acid,PFSA_variant,10
+PFSA-C11,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C11 sulfonic acid,PFSA_variant,11
+PFSA-C12,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Perfluoro-C12 sulfonic acid,PFSA_variant,12
+PFECDA-E1,OC(=O)C(F)(F)OC(F)(F)OC(F)(F)F,Perfluoroether acid (1 ethers),PFECDA_variant,4
+PFECDA-E2,OC(=O)C(F)(F)OC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,Perfluoroether acid (2 ethers),PFECDA_variant,6
+PFECDA-E3,OC(=O)C(F)(F)OC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,Perfluoroether acid (3 ethers),PFECDA_variant,8
+PFECDA-E4,OC(=O)C(F)(F)OC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,Perfluoroether acid (4 ethers),PFECDA_variant,10
+PFECDA-E5,OC(=O)C(F)(F)OC(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,Perfluoroether acid (5 ethers),PFECDA_variant,12
+Cl-PFSA-C4,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C4 sulfonic acid,Cl-PFSA,4
+Cl-PFSA-C5,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C5 sulfonic acid,Cl-PFSA,5
+Cl-PFSA-C6,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C6 sulfonic acid,Cl-PFSA,6
+Cl-PFSA-C7,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C7 sulfonic acid,Cl-PFSA,7
+Cl-PFSA-C8,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C8 sulfonic acid,Cl-PFSA,8
+Cl-PFSA-C9,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,Chloro-perfluoro-C9 sulfonic acid,Cl-PFSA,9
+Emerging-34,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)F,Emerging PFAS variant 34,branched_variant,6
+Emerging-35,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 35,ether_variant,6
+Emerging-36,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 36,ether_variant,7
+Emerging-37,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 37,cyclic_variant,10
+Emerging-38,OC(=O)C1(F)CCC(F)(F)C1(F)F,Emerging PFAS variant 38,cyclic_variant,4
+Emerging-39,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 39,branched_variant,13
+Emerging-40,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 40,amide_variant,4
+Emerging-41,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 41,amide_variant,13
+Emerging-42,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 42,branched_variant,8
+Emerging-43,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F,Emerging PFAS variant 43,branched_variant,4
+Emerging-44,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 44,amide_variant,5
+Emerging-45,OC(=O)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 45,ether_variant,7
+Emerging-46,OC(=O)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 46,ether_variant,11
+Emerging-47,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 47,cyclic_variant,12
+Emerging-48,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 48,amide_variant,4
+Emerging-49,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 49,amide_variant,13
+Emerging-50,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 50,ether_variant,8
+Emerging-51,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 51,ether_variant,9
+Emerging-52,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 52,ether_variant,15
+Emerging-53,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 53,amide_variant,12
+Emerging-54,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 54,cyclic_variant,14
+Emerging-55,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 55,amide_variant,4
+Emerging-56,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,Emerging PFAS variant 56,ether_variant,6
+Emerging-57,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 57,cyclic_variant,10
+Emerging-58,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)F,Emerging PFAS variant 58,branched_variant,6
+Emerging-59,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 59,amide_variant,15
+Emerging-60,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 60,ether_variant,8
+Emerging-61,OC(=O)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 61,ether_variant,7
+Emerging-62,OC(=O)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 62,ether_variant,10
+Emerging-63,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 63,amide_variant,11
+Emerging-64,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 64,amide_variant,10
+Emerging-65,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 65,amide_variant,5
+Emerging-66,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 66,cyclic_variant,14
+Emerging-67,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 67,cyclic_variant,11
+Emerging-68,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)F,Emerging PFAS variant 68,branched_variant,6
+Emerging-69,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 69,cyclic_variant,12
+Emerging-70,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 70,cyclic_variant,6
+Emerging-71,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 71,amide_variant,5
+Emerging-72,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 72,cyclic_variant,9
+Emerging-73,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F,Emerging PFAS variant 73,branched_variant,4
+Emerging-74,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 74,cyclic_variant,15
+Emerging-75,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 75,amide_variant,10
+Emerging-76,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 76,amide_variant,7
+Emerging-77,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 77,cyclic_variant,9
+Emerging-78,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 78,cyclic_variant,11
+Emerging-79,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 79,amide_variant,6
+Emerging-80,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 80,amide_variant,15
+Emerging-81,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 81,branched_variant,7
+Emerging-82,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 82,cyclic_variant,10
+Emerging-83,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 83,ether_variant,11
+Emerging-84,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 84,cyclic_variant,7
+Emerging-85,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 85,branched_variant,10
+Emerging-86,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 86,amide_variant,10
+Emerging-87,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 87,cyclic_variant,10
+Emerging-88,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 88,amide_variant,14
+Emerging-89,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 89,amide_variant,8
+Emerging-90,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 90,amide_variant,5
+Emerging-91,OC(=O)C1(F)CCC(F)(F)C1(F)F,Emerging PFAS variant 91,cyclic_variant,4
+Emerging-92,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 92,cyclic_variant,12
+Emerging-93,OC(=O)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 93,ether_variant,10
+Emerging-94,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 94,cyclic_variant,13
+Emerging-95,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F,Emerging PFAS variant 95,branched_variant,5
+Emerging-96,OC(=O)C1(F)CCC(F)(F)C1(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 96,cyclic_variant,7
+Emerging-97,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 97,amide_variant,5
+Emerging-98,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 98,ether_variant,8
+Emerging-99,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,Emerging PFAS variant 99,branched_variant,10
+Emerging-100,OC(=O)C(F)(F)C(F)(F)C(F)(C(F)(F)F)C(F)(F)F,Emerging PFAS variant 100,branched_variant,5

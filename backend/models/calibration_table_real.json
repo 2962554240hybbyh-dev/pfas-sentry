@@ -1,0 +1,325 @@
+{
+  "PFOA": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 33,
+      "pmids": [
+        "40317014",
+        "40359556",
+        "40367801",
+        "40465018",
+        "39286118"
+      ]
+    },
+    "hepatotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 36,
+      "pmids": [
+        "40317014",
+        "40359556",
+        "40367801",
+        "33751946",
+        "40465018"
+      ]
+    },
+    "immunotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 10,
+      "pmids": [
+        "40465018",
+        "40806648",
+        "40691870",
+        "41108957",
+        "39512894"
+      ]
+    },
+    "endocrine": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 11,
+      "pmids": [
+        "39286118",
+        "41492385",
+        "38092172",
+        "40958282",
+        "35318009"
+      ]
+    },
+    "developmental": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 5,
+      "pmids": [
+        "28617200",
+        "40079289",
+        "35318009",
+        "41252967",
+        "37658449"
+      ]
+    }
+  },
+  "PFOS": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 40,
+      "pmids": [
+        "40317014",
+        "40465018",
+        "39286118",
+        "35752307",
+        "40580631"
+      ]
+    },
+    "hepatotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 43,
+      "pmids": [
+        "40317014",
+        "33751946",
+        "40465018",
+        "39286118",
+        "40580631"
+      ]
+    },
+    "immunotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 14,
+      "pmids": [
+        "40465018",
+        "40806648",
+        "41108957",
+        "39512894",
+        "30248109"
+      ]
+    },
+    "endocrine": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 12,
+      "pmids": [
+        "39286118",
+        "41492385",
+        "38092172",
+        "40050647",
+        "40958282"
+      ]
+    },
+    "developmental": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 7,
+      "pmids": [
+        "28617200",
+        "40079289",
+        "40737503",
+        "37741269",
+        "41043219"
+      ]
+    },
+    "SR-MMP": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 1,
+      "pmids": [
+        "40570396"
+      ]
+    }
+  },
+  "PFHxS": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 10,
+      "pmids": [
+        "39286118",
+        "35752307",
+        "40806648",
+        "40500729",
+        "39732059"
+      ]
+    },
+    "hepatotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 8,
+      "pmids": [
+        "39286118",
+        "40500729",
+        "39547089",
+        "35318009",
+        "41222812"
+      ]
+    },
+    "endocrine": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 6,
+      "pmids": [
+        "39286118",
+        "39547089",
+        "35318009",
+        "41222812",
+        "41453585"
+      ]
+    },
+    "immunotoxicity": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2,
+      "pmids": [
+        "40806648",
+        "39512894"
+      ]
+    },
+    "developmental": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2,
+      "pmids": [
+        "35318009",
+        "37658449"
+      ]
+    }
+  },
+  "PFNA": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 7,
+      "pmids": [
+        "35752307",
+        "40806648",
+        "40500729",
+        "39732059",
+        "41222812"
+      ]
+    },
+    "immunotoxicity": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2,
+      "pmids": [
+        "40806648",
+        "39512894"
+      ]
+    },
+    "hepatotoxicity": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 6,
+      "pmids": [
+        "40500729",
+        "41222812",
+        "41453585",
+        "39179042",
+        "41389916"
+      ]
+    },
+    "endocrine": {
+      "value": 1.0,
+      "confidence": 0.75,
+      "n_papers": 4,
+      "pmids": [
+        "41222812",
+        "41453585",
+        "41389916",
+        "37658449"
+      ]
+    },
+    "developmental": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2,
+      "pmids": [
+        "41389916",
+        "37658449"
+      ]
+    }
+  },
+  "PFDA": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.75,
+      "n_papers": 4,
+      "pmids": [
+        "35752307",
+        "35318009",
+        "41222812",
+        "37658449"
+      ]
+    },
+    "immunotoxicity": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 1,
+      "pmids": [
+        "39512894"
+      ]
+    },
+    "hepatotoxicity": {
+      "value": 1.0,
+      "confidence": 0.75,
+      "n_papers": 3,
+      "pmids": [
+        "35318009",
+        "41222812",
+        "37658449"
+      ]
+    },
+    "endocrine": {
+      "value": 1.0,
+      "confidence": 0.75,
+      "n_papers": 3,
+      "pmids": [
+        "35318009",
+        "41222812",
+        "37658449"
+      ]
+    },
+    "developmental": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2,
+      "pmids": [
+        "35318009",
+        "37658449"
+      ]
+    }
+  },
+  "PFHxA": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 1,
+      "pmids": [
+        "35752307"
+      ]
+    }
+  },
+  "PFBS": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 1,
+      "pmids": [
+        "35752307"
+      ]
+    }
+  },
+  "GenX": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 1,
+      "pmids": [
+        "35752307"
+      ]
+    }
+  }
+}

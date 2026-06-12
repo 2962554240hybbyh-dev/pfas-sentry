@@ -1,0 +1,638 @@
+{
+  "PFOA": {
+    "physicochemical": {
+      "MolecularWeight": 414.07,
+      "XLogP": 4.45,
+      "TPSA": 37.3,
+      "WaterSolubility": "9.5 g/L (25°C)",
+      "VaporPressure": "0.0044 mmHg (25°C)",
+      "LogKow": 4.45,
+      "pKa": 0.5,
+      "MeltingPoint": "54-56°C",
+      "BoilingPoint": "189°C",
+      "source": "PubChem/EPA CompTox"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.03,
+      "LOAEL_hepatotoxicity": 0.1,
+      "NOAEL_immunotoxicity": 0.006,
+      "LOAEL_immunotoxicity": 0.02,
+      "NOAEL_developmental": 0.01,
+      "LOAEL_developmental": 0.03,
+      "RfD": 2e-05,
+      "TDI": 8e-06,
+      "OralSlopeFactor": null,
+      "IARC_Classification": "2B",
+      "source": "EPA Tox Review 2016, EFSA 2020"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Pimephales promelas (黑头软口鲦)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "algae_72h_EC50": {
+        "species": "Pseudokirchneriella subcapitata",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.1,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {
+      "drinking_water_concentration": {
+        "range": "0.001-0.1",
+        "unit": "μg/L",
+        "typical": 0.02,
+        "source": "EPA CCL4"
+      },
+      "serum_levels_general": {
+        "range": "1-10",
+        "unit": "ng/mL",
+        "typical": 2.0,
+        "source": "NHANES 2015-2016"
+      },
+      "serum_levels_workers": {
+        "range": "100-10000",
+        "unit": "ng/mL",
+        "typical": 500,
+        "source": "职业暴露研究"
+      },
+      "oral_reference_dose": 2e-05,
+      "drinking_water_health_advisory": 0.07,
+      "source": "EPA, NHANES, 文献"
+    },
+    "environmental": {
+      "surface_water": {
+        "range": "0.001-0.1",
+        "unit": "μg/L",
+        "typical": 0.01,
+        "source": "全球监测数据"
+      },
+      "groundwater": {
+        "range": "0.0001-0.05",
+        "unit": "μg/L",
+        "typical": 0.005,
+        "source": "EPA监测"
+      },
+      "soil": {
+        "range": "0.001-0.1",
+        "unit": "μg/kg",
+        "typical": 0.01,
+        "source": "文献"
+      },
+      "sediment": {
+        "range": "0.01-1",
+        "unit": "μg/kg",
+        "typical": 0.1,
+        "source": "文献"
+      },
+      "air": {
+        "range": "0.001-0.1",
+        "unit": "ng/m³",
+        "typical": 0.01,
+        "source": "文献"
+      },
+      "biota_fish": {
+        "range": "1-100",
+        "unit": "μg/kg",
+        "typical": 10,
+        "source": "文献"
+      },
+      "source": "全球环境监测"
+    },
+    "biodegradation": {
+      "biodegradability": "难降解",
+      "half_life_water": ">100年",
+      "half_life_soil": ">100年",
+      "half_life_sediment": ">100年",
+      "half_life_human": "3.8年",
+      "atmospheric_degradation": "不适用（不易挥发）",
+      "source": "文献"
+    }
+  },
+  "PFOS": {
+    "physicochemical": {
+      "MolecularWeight": 500.13,
+      "XLogP": 4.84,
+      "TPSA": 65.58,
+      "WaterSolubility": "0.57 g/L (25°C)",
+      "VaporPressure": "0.0000031 mmHg (25°C)",
+      "LogKow": 4.84,
+      "pKa": -0.5,
+      "MeltingPoint": ">400°C",
+      "source": "PubChem/EPA CompTox"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.03,
+      "LOAEL_hepatotoxicity": 0.1,
+      "NOAEL_immunotoxicity": 0.003,
+      "LOAEL_immunotoxicity": 0.01,
+      "NOAEL_developmental": 0.01,
+      "LOAEL_developmental": 0.03,
+      "RfD": 4e-05,
+      "TDI": 8e-06,
+      "IARC_Classification": "未分类",
+      "source": "EPA Tox Review 2016, EFSA 2020"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 3.7,
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": 6.8,
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "algae_72h_EC50": {
+        "species": "Pseudokirchneriella subcapitata",
+        "value": 24.5,
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.01,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {
+      "drinking_water_concentration": {
+        "range": "0.001-0.5",
+        "unit": "μg/L",
+        "typical": 0.05,
+        "source": "EPA CCL4"
+      },
+      "serum_levels_general": {
+        "range": "2-20",
+        "unit": "ng/mL",
+        "typical": 5.0,
+        "source": "NHANES 2015-2016"
+      },
+      "serum_levels_workers": {
+        "range": "100-5000",
+        "unit": "ng/mL",
+        "typical": 200,
+        "source": "职业暴露研究"
+      },
+      "oral_reference_dose": 4e-05,
+      "drinking_water_health_advisory": 0.07,
+      "source": "EPA, NHANES, 文献"
+    },
+    "environmental": {
+      "surface_water": {
+        "range": "0.001-0.5",
+        "unit": "μg/L",
+        "typical": 0.02,
+        "source": "全球监测数据"
+      },
+      "groundwater": {
+        "range": "0.0001-0.1",
+        "unit": "μg/L",
+        "typical": 0.01,
+        "source": "EPA监测"
+      },
+      "soil": {
+        "range": "0.001-0.5",
+        "unit": "μg/kg",
+        "typical": 0.02,
+        "source": "文献"
+      },
+      "sediment": {
+        "range": "0.01-10",
+        "unit": "μg/kg",
+        "typical": 0.5,
+        "source": "文献"
+      },
+      "biota_fish": {
+        "range": "10-1000",
+        "unit": "μg/kg",
+        "typical": 50,
+        "source": "文献"
+      },
+      "source": "全球环境监测"
+    },
+    "biodegradation": {
+      "biodegradability": "难降解",
+      "half_life_water": ">100年",
+      "half_life_soil": ">100年",
+      "half_life_sediment": ">100年",
+      "half_life_human": "5.4年",
+      "atmospheric_degradation": "不适用（不易挥发）",
+      "source": "文献"
+    }
+  },
+  "GenX": {
+    "physicochemical": {
+      "MolecularWeight": 296.04,
+      "XLogP": 2.4,
+      "TPSA": 63.6,
+      "WaterSolubility": "可溶",
+      "VaporPressure": "0.013 mmHg (25°C)",
+      "LogKow": 2.4,
+      "pKa": 2.9,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.03,
+      "LOAEL_hepatotoxicity": 0.1,
+      "NOAEL_nephrotoxicity": 0.01,
+      "LOAEL_nephrotoxicity": 0.03,
+      "RfD": 3e-06,
+      "source": "EPA GenX Toxicity Assessment 2021"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "文献"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "文献"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.3,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {
+      "drinking_water_concentration": {
+        "range": "0.001-0.1",
+        "unit": "μg/L",
+        "typical": 0.01,
+        "source": "文献"
+      },
+      "serum_levels_general": {
+        "range": "0.1-5",
+        "unit": "ng/mL",
+        "typical": 0.5,
+        "source": "文献"
+      },
+      "oral_reference_dose": 3e-06,
+      "source": "EPA GenX Assessment"
+    },
+    "environmental": {},
+    "biodegradation": {
+      "biodegradability": "较难降解",
+      "half_life_water": "约30天",
+      "half_life_soil": "约30天",
+      "half_life_human": "约30天",
+      "source": "文献"
+    }
+  },
+  "PFNA": {
+    "physicochemical": {
+      "MolecularWeight": 464.08,
+      "XLogP": 5.08,
+      "TPSA": 37.3,
+      "WaterSolubility": "0.12 g/L (25°C)",
+      "VaporPressure": "0.0002 mmHg (25°C)",
+      "LogKow": 5.08,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.03,
+      "LOAEL_hepatotoxicity": 0.1,
+      "RfD": 3e-05,
+      "source": "EPA Tox Review"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.05,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFDA": {
+    "physicochemical": {
+      "MolecularWeight": 514.08,
+      "XLogP": 5.71,
+      "TPSA": 37.3,
+      "WaterSolubility": "0.0072 g/L (25°C)",
+      "LogKow": 5.71,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.01,
+      "LOAEL_hepatotoxicity": 0.03,
+      "RfD": 1e-05,
+      "source": "EPA Tox Review"
+    },
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFHxA": {
+    "physicochemical": {
+      "MolecularWeight": 314.05,
+      "XLogP": 3.19,
+      "TPSA": 37.3,
+      "WaterSolubility": "可溶",
+      "LogKow": 3.19,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.1,
+      "LOAEL_hepatotoxicity": 0.3,
+      "RfD": 0.0001,
+      "source": "EPA Tox Review"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.5,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {
+      "biodegradability": "较难降解",
+      "half_life_water": "约40天",
+      "half_life_human": "约32天",
+      "source": "文献"
+    }
+  },
+  "PFBS": {
+    "physicochemical": {
+      "MolecularWeight": 300.1,
+      "XLogP": 2.33,
+      "TPSA": 65.58,
+      "WaterSolubility": "4.6 g/L (25°C)",
+      "LogKow": 2.33,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_thyroid": 0.03,
+      "LOAEL_thyroid": 0.1,
+      "RfD": 3e-05,
+      "source": "EPA Tox Review"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 1.0,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFHxS": {
+    "physicochemical": {
+      "MolecularWeight": 400.12,
+      "XLogP": 3.57,
+      "TPSA": 65.58,
+      "WaterSolubility": "0.24 g/L (25°C)",
+      "LogKow": 3.57,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {
+      "NOAEL_hepatotoxicity": 0.01,
+      "LOAEL_hepatotoxicity": 0.03,
+      "RfD": 2e-05,
+      "source": "EPA Tox Review"
+    },
+    "ecotox": {
+      "fish_96h_LC50": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "daphnia_48h_EC50": {
+        "species": "Daphnia magna (大型溞)",
+        "value": ">100",
+        "unit": "mg/L",
+        "source": "ECOTOX"
+      },
+      "NOEC_chronic": {
+        "species": "Danio rerio (斑马鱼)",
+        "value": 0.1,
+        "unit": "mg/L",
+        "source": "文献"
+      }
+    },
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFBA": {
+    "physicochemical": {
+      "MolecularWeight": 214.04,
+      "XLogP": 1.36,
+      "TPSA": 37.3,
+      "WaterSolubility": "易溶",
+      "LogKow": 1.36,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {
+      "biodegradability": "可降解",
+      "half_life_water": "约10天",
+      "half_life_human": "约4天",
+      "source": "文献"
+    }
+  },
+  "PFPeA": {
+    "physicochemical": {
+      "MolecularWeight": 264.04,
+      "XLogP": 2.27,
+      "TPSA": 37.3,
+      "WaterSolubility": "可溶",
+      "LogKow": 2.27,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFUnDA": {
+    "physicochemical": {
+      "MolecularWeight": 564.09,
+      "XLogP": 6.34,
+      "TPSA": 37.3,
+      "WaterSolubility": "微溶",
+      "LogKow": 6.34,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "FOSA": {
+    "physicochemical": {
+      "MolecularWeight": 499.14,
+      "XLogP": 4.15,
+      "TPSA": 69.29,
+      "WaterSolubility": "微溶",
+      "LogKow": 4.15,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "ADONA": {
+    "physicochemical": {
+      "MolecularWeight": 462.06,
+      "XLogP": 3.2,
+      "TPSA": 72.83,
+      "WaterSolubility": "可溶",
+      "LogKow": 3.2,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "TFA": {
+    "physicochemical": {
+      "MolecularWeight": 114.02,
+      "XLogP": 0.26,
+      "TPSA": 37.3,
+      "WaterSolubility": "完全混溶",
+      "LogKow": 0.26,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "TFMS": {
+    "physicochemical": {
+      "MolecularWeight": 150.08,
+      "XLogP": 0.15,
+      "TPSA": 62.75,
+      "WaterSolubility": "完全混溶",
+      "LogKow": 0.15,
+      "source": "PubChem/文献"
+    },
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "6:2 FTCA": {
+    "physicochemical": {},
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "8:2 FTCA": {
+    "physicochemical": {},
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "9Cl-PF3ONS": {
+    "physicochemical": {},
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "N-EtFOSE": {
+    "physicochemical": {},
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  },
+  "PFDS": {
+    "physicochemical": {},
+    "toxicity": {},
+    "ecotox": {},
+    "exposure": {},
+    "environmental": {},
+    "biodegradation": {}
+  }
+}

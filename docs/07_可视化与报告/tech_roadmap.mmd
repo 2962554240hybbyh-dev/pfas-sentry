@@ -1,0 +1,44 @@
+graph LR
+    subgraph Phase1["阶段1：数据基础<br/>(2天)"]
+        A1["多源数据库<br/>采集"] --> A2["数据清洗<br/>标准化"]
+        A2 --> A3["分子描述符<br/>生成(500+)"]
+        A2 --> A4["分子图<br/>数据集"]
+    end
+
+    subgraph Phase2["阶段2：模型构建<br/>(3天)"]
+        B1["QSAR 6模型<br/>×8终点"] --> B3["模型解释<br/>(SHAP/LIME)"]
+        B2["GNN 5模型<br/>×8终点"] --> B4["GNN解释<br/>(GNNExplainer)"]
+        B3 --> B5["加权集成<br/>融合模型"]
+        B4 --> B5
+    end
+
+    subgraph Phase3["阶段3：知识工程<br/>(2天)"]
+        C1["100篇文献<br/>PDF解析"] --> C3["三元组<br/>抽取"]
+        C2["法规标准<br/>采集"] --> C3
+        C3 --> C4["Neo4j<br/>知识图谱"]
+        C3 --> C5["FAISS<br/>向量库"]
+    end
+
+    subgraph Phase4["阶段4：RAG系统<br/>(2天)"]
+        D1["LangChain<br/>RAG引擎"] --> D2["混合检索<br/>+重排序"]
+        D2 --> D3["毒性预测<br/>查询功能"]
+        D2 --> D4["毒性机制<br/>解释功能"]
+        D2 --> D5["风险评估<br/>报告功能"]
+    end
+
+    subgraph Phase5["阶段5：集成测试<br/>(1天)"]
+        E1["新兴PFAS<br/>大规模预测"] --> E3["系统演示<br/>界面"]
+        E2["风险分级<br/>与报告"] --> E3
+        E3 --> E4["竞赛文档<br/>准备"]
+    end
+
+    Phase1 --> Phase2
+    Phase2 --> Phase3
+    Phase3 --> Phase4
+    Phase4 --> Phase5
+
+    style Phase1 fill:#E3F2FD,stroke:#1565C0
+    style Phase2 fill:#FCE4EC,stroke:#C62828
+    style Phase3 fill:#E8F5E9,stroke:#2E7D32
+    style Phase4 fill:#FFF3E0,stroke:#E65100
+    style Phase5 fill:#F3E5F5,stroke:#6A1B9A

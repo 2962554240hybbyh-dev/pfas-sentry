@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RAG Q&A - PFAS-Sentry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f2f5;color:#333}
+.navbar{background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 20px}
+.logo{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:bold}
+.nav-links{list-style:none;display:flex;gap:2rem}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+h1{color:#1a237e;margin:1.5rem 0 1rem}
+.q-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem;margin:1.5rem 0}
+.q-btn{background:#fff;border:2px solid #1a237e;color:#1a237e;padding:1rem 1.5rem;border-radius:8px;font-size:1rem;cursor:pointer;text-align:left;transition:all .3s}
+.q-btn:hover{background:#1a237e;color:#fff}
+.custom-q{display:flex;gap:1rem;margin:1rem 0}
+.custom-q input{flex:1;padding:.75rem 1rem;border:2px solid #ddd;border-radius:8px;font-size:1rem}
+.btn{background:#1a237e;color:#fff;border:none;padding:.75rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer}
+.btn:hover{background:#283593}
+.answer-card{background:#fff;border-radius:12px;padding:2rem;margin:1.5rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.answer-card h3{color:#1a237e;margin-bottom:1rem}
+#answerText{line-height:1.8;font-size:1.05rem}
+.sources{background:#f5f7fa;padding:1rem;border-radius:8px;margin:1rem 0}
+.sources h4{margin-bottom:.5rem;color:#555}
+.conf{display:flex;align-items:center;gap:1rem;margin-top:1rem}
+.conf-bar{flex:1;height:24px;background:#eee;border-radius:12px;overflow:hidden}
+.conf-fill{height:100%;background:linear-gradient(90deg,#4caf50,#8bc34a);border-radius:12px}
+.footer{background:#1a237e;color:#fff;padding:1.5rem 0;text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="container">
+<a href="index.html" class="logo">PFAS-Sentry</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="prediction.html">Prediction</a></li>
+<li><a href="qa.html" class="active">Q&A</a></li>
+<li><a href="comparison.html">Comparison</a></li>
+</ul>
+</div></nav>
+
+<div class="container">
+<h1>RAG Intelligent Q&A</h1>
+<p style="color:#666">All answers cite PubMed sources. Verified at <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">pubmed.ncbi.nlm.nih.gov</a></p>
+
+<h2 style="color:#1a237e;margin:1.5rem 0 .5rem">Common Questions</h2>
+<div class="q-grid">
+<button class="q-btn" onclick="ask('Why is PFOA toxic?')">Why is PFOA toxic?</button>
+<button class="q-btn" onclick="ask('Why do PFAS bioaccumulate?')">Why do PFAS bioaccumulate?</button>
+<button class="q-btn" onclick="ask('What are the health effects of PFAS?')">What are the health effects of PFAS?</button>
+<button class="q-btn" onclick="ask('How to remove PFAS from drinking water?')">How to remove PFAS from drinking water?</button>
+<button class="q-btn" onclick="ask('What is the toxicity mechanism of PFAS?')">What is the toxicity mechanism of PFAS?</button>
+<button class="q-btn" onclick="ask('Is GenX safer than PFOA?')">Is GenX safer than PFOA?</button>
+<button class="q-btn" onclick="ask('What are the regulatory standards for PFAS?')">What are the regulatory standards for PFAS?</button>
+<button class="q-btn" onclick="ask('Why are PFAS called forever chemicals?')">Why are PFAS called forever chemicals?</button>
+</div>
+
+<div class="custom-q">
+<input type="text" id="qInput" placeholder="Enter your question..." onkeypress="if(event.key==='Enter')askCustom()">
+<button class="btn" onclick="askCustom()">Ask</button>
+</div>
+
+<div id="answerSection" style="display:none">
+<div class="answer-card">
+<h3>Answer</h3>
+<div id="answerText"></div>
+<div class="sources">
+<h4>Sources</h4>
+<div id="sources"></div>
+</div>
+<div class="conf">
+<span>Confidence:</span>
+<div class="conf-bar"><div id="confFill" class="conf-fill" style="width:0%"></div></div>
+<span id="confText"></span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer"><div class="container">
+<p>PFAS-Sentry | Tox21 | PubMed | ChEMBL | EPA CompTox</p>
+</div></div>
+
+<script>
+function ask(q){document.getElementById('qInput').value=q;doAsk(q)}
+function askCustom(){var q=document.getElementById('qInput').value;if(q.trim())doAsk(q)}
+function doAsk(q){
+fetch('/api/qa',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question:q})})
+.then(function(r){return r.json()}).then(function(r){
+if(r.error){alert('Error: '+r.error);return;}
+document.getElementById('answerSection').style.display='block';
+var text=r.answer.replace(/\n/g,'<br>').replace(/\*\*(.*?)\*\*/g,'<b>$1</b>');
+document.getElementById('answerText').innerHTML=text;
+var s='<ul>';
+if(r.sources)r.sources.forEach(function(x){s+='<li>'+x+'</li>'});
+s+='</ul>';
+document.getElementById('sources').innerHTML=s;
+var c=Math.round((r.confidence||0.85)*100);
+document.getElementById('confFill').style.width=c+'%';
+document.getElementById('confText').textContent=c+'%';
+}).catch(function(e){alert('Error: '+e)})}
+</script>
+</body>
+</html>

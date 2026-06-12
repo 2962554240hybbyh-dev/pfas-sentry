@@ -1,0 +1,58 @@
+{
+  "PFOA": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 46
+    },
+    "NR-AhR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 28
+    },
+    "SR-MMP": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 61
+    },
+    "SR-p53": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 28
+    }
+  },
+  "PFOS": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.9,
+      "n_papers": 43
+    },
+    "NR-AhR": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 21
+    },
+    "SR-MMP": {
+      "value": 1.0,
+      "confidence": 0.85,
+      "n_papers": 40
+    },
+    "SR-p53": {
+      "value": 1.0,
+      "confidence": 0.7,
+      "n_papers": 4
+    },
+    "SR-HSE": {
+      "value": 1.0,
+      "confidence": 0.65,
+      "n_papers": 2
+    }
+  },
+  "GenX": {
+    "NR-AR": {
+      "value": 1.0,
+      "confidence": 0.6,
+      "n_papers": 1
+    }
+  }
+}

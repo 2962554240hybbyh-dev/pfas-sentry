@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toxicity Prediction - PFAS-Sentry</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f0f2f5;color:#333}
+.navbar{background:linear-gradient(135deg,#1a237e,#283593);color:#fff;padding:1rem 0;position:sticky;top:0;z-index:100}
+.navbar .container{display:flex;justify-content:space-between;align-items:center;max-width:1200px;margin:0 auto;padding:0 20px}
+.logo{color:#fff;text-decoration:none;font-size:1.5rem;font-weight:bold}
+.nav-links{list-style:none;display:flex;gap:2rem}
+.nav-links a{color:rgba(255,255,255,.85);text-decoration:none}
+.nav-links a:hover,.nav-links a.active{color:#fff}
+.container{max-width:1200px;margin:0 auto;padding:0 20px}
+h1{color:#1a237e;margin:1.5rem 0 1rem}
+.input-section{background:#fff;border-radius:12px;padding:2rem;margin:1rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.input-group{margin-bottom:1rem}
+.input-group label{display:block;margin-bottom:.5rem;font-weight:bold;color:#444}
+select,input[type=text]{width:100%;padding:.75rem 1rem;border:2px solid #ddd;border-radius:8px;font-size:1rem;transition:border-color .3s}
+select:focus,input:focus{outline:none;border-color:#1a237e}
+.btn{background:#1a237e;color:#fff;border:none;padding:.75rem 2rem;border-radius:8px;font-size:1rem;cursor:pointer;transition:background .3s}
+.btn:hover{background:#283593}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+.info-card{background:#fff;border-radius:12px;padding:1.5rem;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+.info-card h3{color:#1a237e;margin-bottom:1rem;border-bottom:2px solid #e0e0e0;padding-bottom:.5rem}
+.info-card p{margin:.4rem 0;font-size:.95rem}
+.chart-section{background:#fff;border-radius:12px;padding:1.5rem;margin:1.5rem 0;box-shadow:0 2px 12px rgba(0,0,0,.08)}
+table{width:100%;border-collapse:collapse;margin-top:1rem}
+th,td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid #eee}
+th{background:#f5f7fa;font-weight:bold;color:#555;font-size:.9rem}
+td{font-size:.9rem}
+.risk-high{color:#c62828;font-weight:bold}
+.risk-med{color:#e65100;font-weight:bold}
+.risk-low{color:#2e7d32;font-weight:bold}
+.badge{display:inline-block;padding:.4rem 1rem;border-radius:6px;font-weight:bold;font-size:1.1rem}
+.badge-high{background:#ffebee;color:#c62828;border:1px solid #c62828}
+.badge-med{background:#fff3e0;color:#e65100;border:1px solid #e65100}
+.badge-low{background:#e8f5e9;color:#2e7d32;border:1px solid #2e7d32}
+.chart-row{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+.footer{background:#1a237e;color:#fff;padding:1.5rem 0;text-align:center;margin-top:3rem}
+</style>
+</head>
+<body>
+<nav class="navbar"><div class="container">
+<a href="index.html" class="logo">PFAS-Sentry</a>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="prediction.html" class="active">Prediction</a></li>
+<li><a href="qa.html">Q&A</a></li>
+<li><a href="comparison.html">Comparison</a></li>
+</ul>
+</div></nav>
+
+<div class="container">
+<h1>Toxicity Prediction</h1>
+
+<div class="input-section">
+<div class="input-group">
+<label>Select Compound:</label>
+<select id="compound">
+<option value="PFOA">PFOA (Perfluorooctanoic Acid) - CAS: 335-67-1</option>
+<option value="PFOS">PFOS (Perfluorooctane Sulfonic Acid) - CAS: 1763-23-1</option>
+<option value="GenX">GenX (HFPO-DA) - CAS: 13252-13-6</option>
+<option value="PFNA">PFNA (Perfluorononanoic Acid) - CAS: 375-95-1</option>
+<option value="PFDA">PFDA (Perfluorodecanoic Acid) - CAS: 335-76-2</option>
+<option value="PFHxA">PFHxA (Perfluorohexanoic Acid) - CAS: 307-24-4</option>
+<option value="PFBS">PFBS (Perfluorobutane Sulfonic Acid) - CAS: 375-73-5</option>
+<option value="PFHxS">PFHxS (Perfluorohexane Sulfonic Acid) - CAS: 355-46-4</option>
+<option value="PFBA">PFBA (Perfluorobutanoic Acid) - CAS: 375-22-4</option>
+<option value="TFA">TFA (Trifluoroacetic Acid) - CAS: 76-05-1</option>
+<option value="ADONA">ADONA - CAS: 919005-14-4</option>
+</select>
+</div>
+<p style="color:#666;margin-bottom:.5rem">Or enter SMILES string:</p>
+<div class="input-group">
+<input type="text" id="smiles" placeholder="e.g. OC(=O)C(F)(F)C(F)(F)F">
+</div>
+<button class="btn" onclick="predict()">Predict</button>
+</div>
+
+<div id="result" style="display:none">
+
+<div style="display:flex;justify-content:space-between;align-items:center;margin:1.5rem 0">
+<h2 style="margin:0;border:none;padding:0">Prediction Results</h2>
+<div id="riskBadge"></div>
+</div>
+
+<div class="info-grid">
+<div class="info-card">
+<h3>Compound Information</h3>
+<div id="info"></div>
+</div>
+<div class="info-card">
+<h3>Molecular Structure</h3>
+<img id="molImg" style="max-width:100%;border-radius:8px">
+</div>
+</div>
+
+<div class="chart-section">
+<h3>Toxicity Bar Chart</h3>
+<img id="barChart" style="width:100%">
+</div>
+
+<div class="chart-row">
+<div class="chart-section">
+<h3>Toxicity Radar</h3>
+<img id="radarChart" style="width:100%">
+</div>
+<div class="chart-section">
+<h3>Risk Distribution</h3>
+<img id="pieChart" style="width:100%">
+</div>
+</div>
+
+<div class="chart-section">
+<h3>Detailed Predictions</h3>
+<table>
+<thead><tr><th>Endpoint</th><th>Name</th><th>Value</th><th>95% CI</th><th>Risk</th><th>Method</th></tr></thead>
+<tbody id="tableBody"></tbody>
+</table>
+</div>
+
+<div class="chart-section">
+<h3>Model Information</h3>
+<div id="modelInfo"></div>
+</div>
+
+<div class="chart-section">
+<h3>Data Sources</h3>
+<ul>
+<li><b>Training Data</b>: Tox21 (NCATS/NIH) - 7,831 compounds</li>
+<li><b>Literature</b>: PubMed - 100 papers (PMID verifiable)</li>
+<li><b>Standards</b>: GB 5749-2022, EPA, WHO</li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<div class="footer"><div class="container">
+<p>PFAS-Sentry | Tox21 | PubMed | ChEMBL | EPA CompTox</p>
+</div></div>
+
+<script>
+function predict(){
+var c=document.getElementById('compound').value;
+var s=document.getElementById('smiles').value;
+var d={};
+if(s)d.smiles=s;else d.compound=c;
+
+fetch('/api/predict',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(d)})
+.then(function(r){return r.json()}).then(function(r){
+if(r.error){alert('Error: '+r.error);return;}
+document.getElementById('result').style.display='block';
+
+var ov=r.predictions.overall;
+var riskClass=ov.risk_level.includes('High')?'high':ov.risk_level.includes('Medium')?'med':'low';
+document.getElementById('riskBadge').innerHTML='<span class="badge badge-'+riskClass+'">'+ov.risk_level+' ('+ov.score.toFixed(3)+')</span>';
+
+var i=r.compound;
+document.getElementById('info').innerHTML=
+'<p><b>Name:</b> '+i.name_cn+' ('+i.name_en+')</p>'+
+'<p><b>CAS:</b> '+i.cas+'</p>'+
+'<p><b>Category:</b> '+i.category+'</p>'+
+'<p><b>Formula:</b> '+i.mol_formula+'</p>'+
+'<p><b>MW:</b> '+i.mol_weight+' g/mol</p>'+
+'<p><b>Chain:</b> '+i.chain+'</p>'+
+'<p><b>Toxicity:</b> '+i.toxicity+'</p>'+
+'<p><b>Degradation:</b> '+i.degrade+'</p>'+
+'<p><b>Bioaccumulation:</b> '+i.bioaccum+'</p>';
+
+if(r.mol_image)document.getElementById('molImg').src=r.mol_image;
+if(r.charts){
+if(r.charts.bar)document.getElementById('barChart').src=r.charts.bar;
+if(r.charts.radar)document.getElementById('radarChart').src=r.charts.radar;
+if(r.charts.pie)document.getElementById('pieChart').src=r.charts.pie;
+}
+
+var tb=document.getElementById('tableBody');
+tb.innerHTML='';
+var eps=['NR-AR','NR-AR-LBD','NR-AhR','SR-HSE','SR-MMP','SR-p53'];
+eps.forEach(function(ep){
+var p=r.predictions[ep];
+if(!p)return;
+var row=tb.insertRow();
+row.insertCell(0).textContent=ep;
+row.insertCell(1).textContent=p.name_cn;
+row.insertCell(2).textContent=p.prediction.toFixed(3);
+row.insertCell(3).textContent='['+p.ci[0].toFixed(3)+', '+p.ci[1].toFixed(3)+']';
+var rc=row.insertCell(4);
+rc.textContent=p.risk;
+rc.className='risk-'+(p.risk==='High'?'high':p.risk==='Medium'?'med':'low');
+row.insertCell(5).textContent=p.method;
+});
+
+var m=r.model_info||{};
+document.getElementById('modelInfo').innerHTML=
+'<p><b>Model:</b> '+m.name+'</p>'+
+'<p><b>AUC:</b> '+m.auc+'</p>'+
+'<p><b>F1:</b> '+m.f1+'</p>'+
+'<p><b>Data:</b> Tox21 (NCATS/NIH, 7831 compounds)</p>';
+}).catch(function(e){alert('Error: '+e)});
+}
+</script>
+</body>
+</html>

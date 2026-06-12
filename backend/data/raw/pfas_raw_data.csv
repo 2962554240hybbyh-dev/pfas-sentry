@@ -1,0 +1,46 @@
+﻿ID,SMILES,CAS,Name,Category,NR-AR,NR-AR-LBD,NR-AhR,SR-HSE,SR-MMP,SR-p53,BCF,Biodegradability,MolecularFormula,MolecularWeight,XLogP,TPSA,HBondDonors,HBondAcceptors,RotatableBonds,HeavyAtoms,Complexity
+PFOA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,335-67-1,Perfluorooctanoic acid,PFCA,0,0,1,0,1,0,3.9,0,C8HF15O2,414.07,4.9,37.3,1,17,6,25,530
+PFNA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,375-95-1,Perfluorononanoic acid,PFCA,0,0,1,1,0,0,3.6,0,C9HF17O2,464.08,5.6,37.3,1,19,7,28,615
+PFDA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,335-76-2,Perfluorodecanoic acid,PFCA,1,1,0,0,1,1,4.4,0,C10HF19O2,514.08,6.3,37.3,1,21,8,31,701
+PFUnDA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,2058-94-8,Perfluoroundecanoic acid,PFCA,0,0,0,0,0,0,3.1,1,C11HF21O2,564.09,6.9,37.3,1,23,9,34,789
+PFDoDA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,307-55-1,Perfluorododecanoic acid,PFCA,1,1,1,0,1,0,4.9,0,C12HF23O2,614.10,7.6,37.3,1,25,10,37,879
+PFTrDA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,72629-94-8,Perfluorotridecanoic acid,PFCA,0,0,0,1,0,1,3.1,1,C13HF25O2,664.10,8.3,37.3,1,27,11,40,970
+PFTeDA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,376-06-7,Perfluorotetradecanoic acid,PFCA,0,0,0,0,0,0,2.8,1,C14HF27O2,714.11,9.0,37.3,1,29,12,43,1060
+PFHxA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,307-24-4,Perfluorohexanoic acid,PFCA,1,0,1,0,1,0,3.6,1,C6HF11O2,314.05,3.6,37.3,1,13,4,19,368
+PFPeA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,2706-90-3,Perfluoropentanoic acid,PFCA,0,0,0,1,0,1,1.6,1,C5HF9O2,264.05,2.9,37.3,1,11,3,16,291
+PFBA,OC(=O)C(F)(F)C(F)(F)C(F)(F)F,375-22-4,Perfluorobutanoic acid,PFCA,0,0,0,0,1,0,2.8,1,C4HF7O2,214.04,2.2,37.3,1,9,2,13,217
+PFHpA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,375-85-9,Perfluoroheptanoic acid,PFCA,1,1,0,0,0,0,3.5,0,C7HF13O2,364.06,4.3,37.3,1,15,5,22,448
+PFOS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,1763-23-1,Perfluorooctane sulfonic acid,PFSA,0,0,1,0,1,0,3.1,0,C8HF17O3S,500.13,5.0,62.8,1,20,7,29,727
+PFBS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,375-73-5,Perfluorobutane sulfonic acid,PFSA,0,0,0,1,0,1,4.0,1,C4HF9O3S,300.10,2.3,62.8,1,12,3,17,387
+PFHxS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,355-46-4,Perfluorohexane sulfonic acid,PFSA,1,1,0,0,1,0,3.3,0,C6HF13O3S,400.12,3.7,62.8,1,16,5,23,553
+PFDS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,335-77-3,Perfluorodecane sulfonic acid,PFSA,0,0,1,0,0,0,4.3,0,C10HF21O3S,600.15,6.4,62.8,1,24,9,35,907
+PFNS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,68259-12-1,Perfluorononane sulfonic acid,PFSA,1,0,0,1,0,1,2.7,1,C9HF19O3S,550.14,5.7,62.8,1,22,8,32,816
+6:2 FTCA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC,27854-31-5,6:2 Fluorotelomer carboxylic acid,FTCA,0,0,0,0,1,0,3.6,0,C9H6F12O2,374.12,4.7,37.3,1,14,7,23,469
+8:2 FTCA,OC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC,27854-30-4,8:2 Fluorotelomer carboxylic acid,FTCA,0,0,1,0,0,0,2.8,1,C11H6F16O2,474.14,6.1,37.3,1,18,9,29,637
+6:2 FTSA,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)CC,27619-97-2,6:2 Fluorotelomer sulfonic acid,FTSA,1,1,0,0,1,1,4.0,0,C8H6F12O3S,410.18,4.1,62.8,1,15,7,24,576
+FOSA,NC(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,754-91-6,Perfluorooctane sulfonamide,FASA,0,0,0,1,0,0,3.4,0,C9H2F17NO,463.09,5.0,43.1,1,18,7,28,617
+NMeFOSA,CN(C)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,31506-32-8,N-methyl perfluorooctane sulfonamide,FASA,0,0,1,0,1,0,3.2,0,C10H6F17NO2S,527.20,5.4,45.8,0,20,8,31,776
+N-EtFOSA,CCN(C)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,4151-50-2,N-ethyl perfluorooctane sulfonamide,FASA,0,0,0,0,0,0,2.5,1,C11H8F17NO2S,541.23,5.8,45.8,0,20,9,32,794
+NMeFOSE,CN(CCO)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,24448-09-7,N-methyl perfluorooctane sulfonamidoethanol,FASE,1,1,0,0,1,1,4.5,0,C11H8F17NO3S,557.23,4.7,66.0,1,21,10,33,813
+N-EtFOSE,CCN(CCO)S(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,1691-99-2,N-ethyl perfluorooctane sulfonamidoethanol,FASE,0,0,1,1,0,0,3.0,0,C12H10F17NO3S,571.25,5.1,66.0,1,21,11,34,830
+GenX (HFPO-DA),OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)F,13252-13-6,Hexafluoropropylene oxide dimer acid,PFECDA,1,0,0,0,1,0,4.3,1,C5HF9O4,296.04,3.0,55.8,1,13,5,18,321
+ADONA,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)F,919005-14-4,"4,8-Dioxa-3H-perfluorononanoic acid",PFECDA,0,0,0,0,0,1,2.3,1,C8HF15O5,462.07,5.1,65.0,1,20,9,28,581
+PFO4DA,OC(=O)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)OC(F)(F)C(F)(F)F,39492-88-1,"Perfluoro-3,5,7,9-tetraoxadecanoic acid",PFECDA,0,0,1,0,0,0,2.3,1,C10HF19O6,578.08,6.5,74.2,1,25,12,35,773
+TFMS,OS(=O)(=O)C(F)(F)F,1493-13-6,Trifluoromethanesulfonic acid,PFSA,0,0,0,1,1,0,3.1,1,CHF3O3S,150.08,0.3,62.8,1,6,0,8,158
+TFA,OC(=O)C(F)(F)F,76-05-1,Trifluoroacetic acid,PFCA,1,1,0,0,0,1,1.4,1,C2HF3O2,114.02,0.9,37.3,1,5,0,7,83
+C6/C8 PFPiA,P(=O)(O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,57677-99-5,Perfluorohexylphosphonic acid,PFPiA,0,0,1,0,1,0,3.4,0,C6HF13O2P+,383.02,3.7,37.3,1,15,5,22,452
+9Cl-PF3ONS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,756426-58-1,9-Chlorohexadecafluoro-3-nonanesulfonic acid,Cl-PFAES,1,0,0,1,0,0,3.9,0,,0,0.0,0.0,0,0,0,0,0
+11Cl-PF3OUdS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(Cl)F,763051-92-9,11-Chloroeicosafluoro-3-undecanesulfonic acid,Cl-PFAES,0,0,0,0,1,0,3.5,0,,0,0.0,0.0,0,0,0,0,0
+PFECHA,OC(=O)C1(F)OC(F)(F)C1(F)F,812-70-4,Perfluoroethylcyclohexane acid,PFECHA,0,0,1,0,0,1,3.3,1,,0,0.0,0.0,0,0,0,0,0
+PFPeS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,2706-91-4,Perfluoropentane sulfonic acid,PFSA,1,1,0,0,1,0,3.4,1,C5HF11O3S,350.11,3.0,62.8,1,14,4,20,469
+PFHpS,OS(=O)(=O)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)C(F)(F)F,375-92-8,Perfluoroheptane sulfonic acid,PFSA,0,0,0,1,0,0,4.2,0,C7HF15O3S,450.12,4.3,62.8,1,18,6,26,639
+Benzene,c1ccccc1,71-43-2,Benzene,Control,0,1,1,0,0,0,0.59,1,C6H6,78.11,2.1,0.0,0,0,0,6,15
+Toluene,Cc1ccccc1,108-88-3,Toluene,Control,0,1,0,1,1,0,0.77,0,C7H8,92.14,2.7,0.0,0,0,0,7,42
+Ethanol,CCO,64-17-5,Ethanol,Control,0,0,0,0,0,0,0.94,1,C2H6O,46.07,-0.1,20.2,1,1,0,3,2
+Acetic acid,CC(=O)O,64-19-7,Acetic acid,Control,0,1,0,0,0,0,1.41,0,C2H4O2,60.05,-0.2,37.3,1,2,0,4,31
+Glucose,OC[C@H]1OC(O)[C@H](O)[C@@H](O)[C@@H]1O,50-99-7,Glucose,Control,0,1,1,1,0,0,1.53,1,C6H12O6,180.16,-2.6,110.0,5,6,1,12,151
+Bisphenol A,CC(C)(c1ccc(O)cc1)c1ccc(O)cc1,80-05-7,Bisphenol A,Control,0,0,0,1,0,0,0.97,1,C15H16O2,228.29,3.3,40.5,2,2,2,17,209
+Atrazine,CCNC1=NC(=NC(=N1)Cl)NC(C)C,1912-24-9,Atrazine,Control,0,0,1,1,1,1,1.4,1,C8H14ClN5,215.68,2.6,62.7,2,5,4,14,166
+Chlorpyrifos,CCOP(=S)(OCC)Oc1nc(Cl)c(Cl)cc1Cl,2921-88-2,Chlorpyrifos,Control,0,0,0,0,0,0,1.74,1,C9H11Cl3NO3PS,350.6,5.3,72.7,0,5,6,18,303
+Diethyl phthalate,CCOC(=O)c1ccccc1C(=O)OCC,84-66-2,Diethyl phthalate,Control,0,0,0,1,0,1,1.66,0,C12H14O4,222.24,2.5,52.6,0,4,6,16,223
+Dibutyl phthalate,CCCCOC(=O)c1ccccc1C(=O)OCCCC,84-74-2,Dibutyl phthalate,Control,0,1,1,1,1,0,1.04,0,C16H22O4,278.34,4.7,52.6,0,4,10,20,271
