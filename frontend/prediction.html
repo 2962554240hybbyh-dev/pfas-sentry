@@ -136,6 +136,16 @@ td{font-size:.9rem}
 </ul>
 </div>
 
+<div class="chart-section">
+<h3>Generate Report</h3>
+<p>Click the button below to generate a comprehensive risk assessment report.</p>
+<button class="btn" onclick="generateReport()">Generate Risk Assessment Report</button>
+<div id="reportSection" style="display:none;margin-top:1rem">
+<h4>Risk Assessment Report</h4>
+<pre id="reportContent" style="background:#f5f7fa;padding:1rem;border-radius:8px;white-space:pre-wrap;max-height:500px;overflow-y:auto;font-size:0.9rem"></pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -201,6 +211,16 @@ document.getElementById('modelInfo').innerHTML=
 '<p><b>AUC:</b> '+m.auc+'</p>'+
 '<p><b>F1:</b> '+m.f1+'</p>'+
 '<p><b>Data:</b> Tox21 (NCATS/NIH, 7831 compounds)</p>';
+}).catch(function(e){alert('Error: '+e)});
+}
+
+function generateReport(){
+var c=document.getElementById('compound').value;
+fetch('/api/report',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({compound:c})})
+.then(function(r){return r.json()}).then(function(r){
+if(r.error){alert('Error: '+r.error);return;}
+document.getElementById('reportSection').style.display='block';
+document.getElementById('reportContent').textContent=r.report;
 }).catch(function(e){alert('Error: '+e)});
 }
 </script>
