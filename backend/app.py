@@ -386,18 +386,18 @@ def make_charts(preds, name):
     import matplotlib; matplotlib.use('Agg'); import matplotlib.pyplot as plt
     charts = {}
     vals = [preds[ep]['prediction'] for ep in ENDPOINTS]
-    labels = [f'{ep}\n{ENDPOINT_CN[ep]}' for ep in ENDPOINTS]
+    labels = [f'{ep}' for ep in ENDPOINTS]  # 只用英文，避免字体问题
     fig, ax = plt.subplots(figsize=(10,5))
     colors = ['#ff4444' if v>0.6 else '#ffaa00' if v>0.3 else '#44bb44' for v in vals]
     bars = ax.bar(range(6), vals, color=colors, width=0.6)
     for b,v in zip(bars,vals): ax.text(b.get_x()+b.get_width()/2, b.get_height()+0.02, f'{v:.3f}', ha='center', fontsize=9)
-    ax.set_xticks(range(6)); ax.set_xticklabels(labels, fontsize=8); ax.set_ylim(0,1.15); ax.set_ylabel('Toxicity Probability'); ax.set_title(f'{name} - Toxicity Prediction'); ax.grid(True, alpha=0.3, axis='y')
+    ax.set_xticks(range(6)); ax.set_xticklabels(labels, fontsize=10); ax.set_ylim(0,1.15); ax.set_ylabel('Toxicity Probability'); ax.set_title(f'{name} - Toxicity Prediction'); ax.grid(True, alpha=0.3, axis='y')
     buf = io.BytesIO(); fig.savefig(buf, format='png', dpi=100, bbox_inches='tight'); plt.close(fig)
     charts['bar'] = 'data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode()
     fig, ax = plt.subplots(figsize=(6,6), subplot_kw=dict(polar=True))
     angles = np.linspace(0,2*np.pi,6,endpoint=False).tolist()+[0]
     ax.fill(angles, vals+vals[:1], alpha=0.25, color='#ff6b6b'); ax.plot(angles, vals+vals[:1], 'o-', color='#ff6b6b')
-    ax.set_xticks(angles[:-1]); ax.set_xticklabels(ENDPOINTS, fontsize=8); ax.set_ylim(0,1); ax.set_title('Toxicity Radar', pad=20)
+    ax.set_xticks(angles[:-1]); ax.set_xticklabels(ENDPOINTS, fontsize=9); ax.set_ylim(0,1); ax.set_title('Toxicity Radar', pad=20)
     buf = io.BytesIO(); fig.savefig(buf, format='png', dpi=100, bbox_inches='tight'); plt.close(fig)
     charts['radar'] = 'data:image/png;base64,' + base64.b64encode(buf.getvalue()).decode()
     hi = sum(1 for v in vals if v>0.6); md = sum(1 for v in vals if 0.3<v<=0.6); lo = sum(1 for v in vals if v<=0.3)
