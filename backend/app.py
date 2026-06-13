@@ -24,6 +24,9 @@ except ImportError:
 app = Flask(__name__, static_folder='../frontend', static_url_path='')
 CORS(app)
 
+# Version: 2.0 - All 20 compounds + Report generation
+# Last updated: 2026-06-13
+
 # PFAS数据库
 PFAS_DB = {
     'PFOA': {
