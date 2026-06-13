@@ -100,18 +100,37 @@ def load_models():
     selectors = {}
     scaler = None
     imputer = None
+    loaded_count = 0
+
+    print(f"[Model Loading] Looking for models in: {model_dir}")
+    print(f"[Model Loading] Directory exists: {os.path.exists(model_dir)}")
 
     if not os.path.exists(model_dir):
+        print("[Model Loading] Model directory not found!")
         return {}, {}, None, None
+
+    # List files in model directory
+    try:
+        files = os.listdir(model_dir)
+        print(f"[Model Loading] Files in model dir: {len(files)}")
+        for f in files[:10]:
+            fpath = os.path.join(model_dir, f)
+            fsize = os.path.getsize(fpath)
+            print(f"[Model Loading]   {f}: {fsize} bytes")
+    except Exception as e:
+        print(f"[Model Loading] Error listing dir: {e}")
 
     try:
         scaler = joblib.load(os.path.join(model_dir, 'feature_scaler.joblib'))
-    except:
-        pass
+        print("[Model Loading] Scaler loaded OK")
+    except Exception as e:
+        print(f"[Model Loading] Scaler failed: {e}")
+
     try:
         imputer = joblib.load(os.path.join(model_dir, 'feature_imputer.joblib'))
-    except:
-        pass
+        print("[Model Loading] Imputer loaded OK")
+    except Exception as e:
+        print(f"[Model Loading] Imputer failed: {e}")
 
     for ep in ENDPOINTS:
         models[ep] = {}
@@ -120,8 +139,10 @@ def load_models():
             if os.path.exists(path):
                 try:
                     models[ep][name] = joblib.load(path)
-                except:
-                    pass
+                    loaded_count += 1
+                except Exception as e:
+                    print(f"[Model Loading] {ep}/{name} failed: {e}")
+
         sel_path = os.path.join(model_dir, f'selector_{ep}.joblib')
         if os.path.exists(sel_path):
             try:
@@ -129,6 +150,7 @@ def load_models():
             except:
                 pass
 
+    print(f"[Model Loading] Total models loaded: {loaded_count}")
     return models, selectors, scaler, imputer
 
 QSAR_MODELS, QSAR_SELECTORS, QSAR_SCALER, QSAR_IMPUTER = load_models()
