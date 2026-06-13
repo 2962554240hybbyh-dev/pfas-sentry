@@ -220,11 +220,18 @@ def predict_toxicity(smiles, compound_name=None):
 
         valid_preds = {k: v for k, v in pretrained_preds.items() if v is not None}
 
+        std_val = round(float(np.std(list(valid_preds.values())) if valid_preds else 0.1), 3)
+        pred_val = round(float(final_pred), 3)
+        ci_low = max(0, pred_val - 1.96 * std_val)
+        ci_high = min(1, pred_val + 1.96 * std_val)
+
         results[ep] = {
             'endpoint': ep,
             'name_cn': ENDPOINT_CN[ep],
-            'prediction': round(float(final_pred), 3),
-            'std': round(float(np.std(list(valid_preds.values())) if valid_preds else 0.1), 3),
+            'prediction': pred_val,
+            'std': std_val,
+            'ci': [round(ci_low, 3), round(ci_high, 3)],
+            'risk': 'High' if pred_val > 0.6 else 'Medium' if pred_val > 0.3 else 'Low',
             'model_preds': pretrained_preds,
             'n_models': len(valid_preds),
             'method': method,
@@ -252,7 +259,20 @@ def fallback_predict(smiles):
     for ep in ENDPOINTS:
         noise = np.random.normal(0, 0.04)
         pred = max(0.05, min(0.95, base + noise))
-        results[ep] = {'endpoint': ep, 'name_cn': ENDPOINT_CN[ep], 'prediction': round(float(pred), 3), 'std': 0.1, 'model_preds': {}, 'n_models': 0, 'method': 'fallback'}
+        pred_val = round(float(pred), 3)
+        ci_low = max(0, pred_val - 1.96 * 0.1)
+        ci_high = min(1, pred_val + 1.96 * 0.1)
+        results[ep] = {
+            'endpoint': ep,
+            'name_cn': ENDPOINT_CN[ep],
+            'prediction': pred_val,
+            'std': 0.1,
+            'ci': [round(ci_low, 3), round(ci_high, 3)],
+            'risk': 'High' if pred_val > 0.6 else 'Medium' if pred_val > 0.3 else 'Low',
+            'model_preds': {},
+            'n_models': 0,
+            'method': 'fallback'
+        }
 
     vals = [results[ep]['prediction'] for ep in ENDPOINTS]
     overall = np.mean(vals)
